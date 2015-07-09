@@ -1,0 +1,25 @@
+{
+  "name": "dos57",
+  "title": "257 - site",
+  "version": "0.1.0",
+  "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.",
+  "author": {
+    "name": "Rodrigo Ibarra",
+    "email": "hola@rodrigo-ibarra.com",
+    "url": "rodrigo-ibarra.com"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-compass": "~0.9.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-svgstore": "~0.3.3",
+    "grunt-jekyll": "~0.4.2",
+    "grunt-shell": "~0.7.0",
+    "load-grunt-tasks": "~0.6.0",
+    "load-grunt-config": "~0.13.1"
+  }
+}
