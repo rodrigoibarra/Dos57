@@ -1,14 +1,13 @@
-<body>
+---
+layout: home-3
+---
 
-    <header class="header_uno">
-        <img src="" class="logo" alt="">
+  {% for post in site.posts limit:6 %}
+    <div class="galeria">
+      <a href="{{ post.url }}">
+        <img src="{{post.thumbnail}}" alt="{{post.title}}">
+      </a>
+    </div>
+  {% endfor %}
 
-    </header>
-
-    <header class="header_dos">
-        <img src="" class="logo-alt" alt="">
-
-    </header>
-
-</body>
-</html>
+{% include form.html %}
