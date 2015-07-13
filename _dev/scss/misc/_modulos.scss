@@ -1,0 +1,27 @@
+.hero_uno{
+  width: 100%;
+  height: auto;
+// extender...
+
+}
+
+
+
+.galeria {
+  width:((100% - (2 * 2%)) / 3);
+  margin-right:2%;
+  margin-top:2%;
+  float:left;
+  padding:0px;
+
+  &:nth-child(3n){
+    margin-right:0;
+  }
+  @include breakpoint(reverso-baby-bear) {
+      width:((100% - (2 * 2%)) / 2);
+      &:nth-child(odd){
+        margin-right:2%;
+      }
+  }
+
+}
