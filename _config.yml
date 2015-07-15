@@ -1,0 +1,4 @@
+name: dos57
+description: "Sitio de dos57"
+permalink: /posts/:title
+exclude:   [node_modules,'Gruntfile.js', 'package.json']

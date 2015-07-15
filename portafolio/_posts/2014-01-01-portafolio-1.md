@@ -1,9 +1,8 @@
 ---
-layout:	rounds
-title:	8/365
+layout:	default
+title:	Proyecto 1
 thumbnail:	/build/images/rounds/1_tn.png
 image:	/build/images/rounds/1.png
 ---
 
-##	Jon Snow.
-Espero que sea Rey del norte.
+Fuego!!!
