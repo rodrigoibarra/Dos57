@@ -2,7 +2,33 @@
 body{
   font-size: 18px;
   line-height:1.5;
+  @include source-sans(400, 16px);
 }
+
+h1{
+  @include source-sans(700, 36px);
+  margin-bottom:15px;
+    @include breakpoint(baby-bear) {
+        @include source-sans(700, 28px);
+    }
+}
+
+h2{
+  @include source-sans(700, 28px);
+  margin:15px 0;
+  @include breakpoint(baby-bear) {
+      @include source-sans(300, 22px);
+  }
+}
+
+h3{
+  @include source-sans(700, 21px);
+  margin-bottom:15px;
+  @include breakpoint(baby-bear) {
+      @include source-sans(700, 19px);
+  }
+}
+
 
 p{
   padding: 15px 0 0 0;

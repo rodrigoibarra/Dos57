@@ -1,12 +1,10 @@
 {% include doctype.html %}
-<header>
-  <div class="hero-uno">
-    <img src="" class="logo-alt" alt="">
-    {% include nav.html %}
-  </div>
-</header>
-
-{{content}}
-
-
+  <header>
+    <div class="hero-uno">
+      <img src="" class="logo-alt" alt="">
+      {% include hero-nav.html %}
+    </div>
+  </header>
+  {% include nav.html %}
+    {{content}}
 {% include footer.html %}

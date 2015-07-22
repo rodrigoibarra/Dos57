@@ -1,27 +1,23 @@
-.hero_uno{
+.hero-uno{
   width: 100%;
-  height: auto;
-// extender...
+  height: 680px;
+  background:
+  linear-gradient(
+  rgba(0, 0, 0, 0.20),
+  rgba(0, 0, 0, 0.20)
+),
+linear-gradient(
+rgba(0, 0, 0, 0.10),
+rgba(0, 0, 0, 0.90)
+),
+  url('/build/images/hero.jpg'),
 
+  ;
+  background-size: cover;
 }
 
 
-
-.galeria {
-  width:((100% - (2 * 2%)) / 3);
-  margin-right:2%;
-  margin-top:2%;
-  float:left;
-  padding:0px;
-
-  &:nth-child(3n){
-    margin-right:0;
-  }
-  @include breakpoint(reverso-baby-bear) {
-      width:((100% - (2 * 2%)) / 2);
-      &:nth-child(odd){
-        margin-right:2%;
-      }
-  }
-
+.wrap{
+  width: 90%;
+  margin: 0 auto;;
 }

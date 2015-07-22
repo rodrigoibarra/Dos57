@@ -1,3 +1,8 @@
+// colores
+
+$negro: rgba(0, 0, 0, 1.0);
+$dorado: #AF8B2E;
+
 // mixins
 
 
@@ -11,4 +16,12 @@
   @if $point == reverso-baby-bear {
     @media (max-width: 700px) { @content; }
   }
+}
+
+
+@mixin source-sans($weight, $size) {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: $size;
+  font-size: calculateRem($size);
+  font-weight: $weight;
 }

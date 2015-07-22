@@ -7,6 +7,10 @@ module.exports = {
      livereload: true,
    },
   },
+  uglify:{
+    files: [ '_dev/libs/*js', '_dev/js/global.js' ],
+    task: ['uglify']
+  },
   svg: {
    files: ["dev/svg/*.svg"],
    tasks: ["svgstore"],
