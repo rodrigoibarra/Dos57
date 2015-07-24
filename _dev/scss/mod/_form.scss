@@ -1,0 +1,18 @@
+.contacto_in{
+  width: 70%;
+}
+
+input, textarea{
+  padding:5px;
+  margin: 5px  0;
+  border: 1px solid $gris;
+  box-shadow: 2px 2px 5px $gris;
+}
+
+.boton{
+  padding: 5px;
+  background: $dorado;
+  color: white;
+  width: 80px;
+  box-shadow: 2px 2px 5px $gris;
+}

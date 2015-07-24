@@ -1,7 +1,12 @@
+.cf:before, .cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+.cf { zoom:1; } /* For IE 6/7 (trigger hasLayout) */
+
 // colores
 
 $negro: rgba(0, 0, 0, 1.0);
 $dorado: #AF8B2E;
+$gris: rgba(0, 0, 0, .1);
 
 // mixins
 

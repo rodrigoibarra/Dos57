@@ -8,9 +8,11 @@
   a {
     display: inline-block;
     line-height: 11vh;
+    color: white;
     padding: 0 10px;
     margin: 0;
     text-decoration: none;
+    cursor: pointer;
   }
 
   a:active, a:visited {
@@ -61,6 +63,7 @@ nav{
     text-align: right;
     color: white;
     padding: 5px 10%;
+    cursor: pointer;
 
   a:active, a:visited {
     color:white;

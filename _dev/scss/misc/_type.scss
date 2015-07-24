@@ -6,7 +6,7 @@ body{
 }
 
 h1{
-  @include source-sans(700, 36px);
+  @include source-sans(500, 36px);
   margin-bottom:15px;
     @include breakpoint(baby-bear) {
         @include source-sans(700, 28px);
@@ -14,7 +14,7 @@ h1{
 }
 
 h2{
-  @include source-sans(700, 28px);
+  @include source-sans(500, 28px);
   margin:15px 0;
   @include breakpoint(baby-bear) {
       @include source-sans(300, 22px);
@@ -22,7 +22,7 @@ h2{
 }
 
 h3{
-  @include source-sans(700, 21px);
+  @include source-sans(500, 21px);
   margin-bottom:15px;
   @include breakpoint(baby-bear) {
       @include source-sans(700, 19px);

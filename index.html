@@ -1,21 +1,25 @@
 ---
 layout: home-1
 ---
-    {% include punch-line.html %}
-    <div class="wrap">
-      {% for post in site.posts limit:6 %}
-        <div class="galeria">
-          <figure class="effect-lily">
-            <img src="{{post.thumbnail}}" alt="{{post.title}}">
-            <figcaption>
-              <a href="{{ post.url }}">
-                <h2>{{post.title}}</h2>
-                <p>{{post.content}}</p>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
+    <div class="wrap cf">
+      {% include punch-line.html %}
+      <section class="portafolio" id="portafolio">
+        {% for post in site.posts limit:6 %}
+          <div class="galeria" >
+            <figure class="effect-lily">
+              <img src="{{post.thumbnail}}" alt="{{post.title}}">
+              <figcaption>
+                <a href="{{ post.url }}">
+                  <h2>{{post.title}}</h2>
+                  <p>{{post.content}}</p>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
 
-      {% endfor %}
+        {% endfor %}
+      </section>
     </div>
-{% include form.html %}
+    <section class="contacto" id="contacto">
+      {% include form.html %}
+    </section>
