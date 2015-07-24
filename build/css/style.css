@@ -521,3 +521,43 @@ input, textarea {
   width: 80px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* line 1, ../../_dev/scss/mod/_footer.scss */
+footer {
+  background: url("/build/images/patron.png");
+  background-size: 60%;
+  height: 100px;
+}
+
+/* line 7, ../../_dev/scss/mod/_footer.scss */
+.social {
+  background: #AF8B2E;
+  border-radius: 50%;
+  padding: 5px;
+  width: 50px;
+  fill: white;
+}
+
+/* line 15, ../../_dev/scss/mod/_footer.scss */
+.social__nav {
+  width: 100%;
+  text-align: right;
+  color: white;
+  padding: 2% 10%;
+  cursor: pointer;
+}
+/* line 22, ../../_dev/scss/mod/_footer.scss */
+.social__nav .logo-h {
+  margin-top: 0;
+}
+
+/* line 27, ../../_dev/scss/mod/_footer.scss */
+a {
+  display: inline-block;
+  line-height: 11vh;
+  color: white;
+  padding: 0 10px;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
