@@ -1,7 +1,28 @@
 .contacto_in{
   width: 70%;
-}
 
+  a{
+    color:$dorado;
+    line-height: inherit;
+  }
+  p{
+    line-height: 26px;
+    padding:0;
+    margin:0 auto;
+      @include source-sans(300, 20px);
+  }
+
+}
+form{
+  width: 100%;
+}
+input{
+  width: 40%;
+  height: 40px;
+}
+textarea{
+  width: 50%;
+}
 input, textarea{
   padding:5px;
   margin: 5px  0;
@@ -13,6 +34,6 @@ input, textarea{
   padding: 5px;
   background: $dorado;
   color: white;
-  width: 80px;
+  width: 100px;
   box-shadow: 2px 2px 5px $gris;
 }

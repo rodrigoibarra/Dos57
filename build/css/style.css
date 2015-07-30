@@ -211,12 +211,13 @@ p:last-child {
 /* line 4, ../../_dev/scss/mod/_punchline.scss */
 .punch-line h1 {
   font-size: 46px;
-  line-height: 44px;
+  line-height: 46x;
   margin-bottom: 10px;
 }
 /* line 9, ../../_dev/scss/mod/_punchline.scss */
 .punch-line p {
-  line-height: 22px;
+  line-height: 26px;
+  padding: 0;
   margin: 0 auto;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
@@ -264,7 +265,7 @@ p:last-child {
 
 /* line 35, ../../_dev/scss/mod/_nav.scss */
 .logo-m {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   text-align: center;
   display: block;
@@ -504,8 +505,39 @@ figure.effect-lily:hover p {
 .contacto_in {
   width: 70%;
 }
+/* line 4, ../../_dev/scss/mod/_form.scss */
+.contacto_in a {
+  color: #AF8B2E;
+  line-height: inherit;
+}
+/* line 8, ../../_dev/scss/mod/_form.scss */
+.contacto_in p {
+  line-height: 26px;
+  padding: 0;
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-size: calculateRem(20px);
+  font-weight: 300;
+}
 
-/* line 5, ../../_dev/scss/mod/_form.scss */
+/* line 16, ../../_dev/scss/mod/_form.scss */
+form {
+  width: 100%;
+}
+
+/* line 19, ../../_dev/scss/mod/_form.scss */
+input {
+  width: 40%;
+  height: 40px;
+}
+
+/* line 23, ../../_dev/scss/mod/_form.scss */
+textarea {
+  width: 50%;
+}
+
+/* line 26, ../../_dev/scss/mod/_form.scss */
 input, textarea {
   padding: 5px;
   margin: 5px  0;
@@ -513,12 +545,12 @@ input, textarea {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* line 12, ../../_dev/scss/mod/_form.scss */
+/* line 33, ../../_dev/scss/mod/_form.scss */
 .boton {
   padding: 5px;
   background: #AF8B2E;
   color: white;
-  width: 80px;
+  width: 100px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
