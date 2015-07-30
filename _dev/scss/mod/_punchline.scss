@@ -3,12 +3,14 @@
   color:white;
   h1{
     font-size: 46px;
-    line-height: 44px;
+    line-height: 46x;
     margin-bottom: 10px;
   }
   p{
-    line-height: 22px;
+    line-height: 26px;
+    padding:0;
     margin:0 auto;
       @include source-sans(300, 20px);
   }
+
 }
