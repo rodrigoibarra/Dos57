@@ -4,6 +4,12 @@
   padding: 10% 0;
   text-align: center;
     @include source-sans(400, 18px);
+    @include breakpoint(baby-bear) {
+      width: 80%;
+      padding: 20% 0;
+      @include source-sans(400, 16px);
+
+    }
 
   a {
     display: inline-block;
@@ -13,6 +19,7 @@
     margin: 0;
     text-decoration: none;
     cursor: pointer;
+
   }
 
   a:active, a:visited {
@@ -30,6 +37,8 @@
     content: "";
   }
 
+
+
 }
 
 .logo-m{
@@ -37,6 +46,7 @@
   margin: 0 auto;
   text-align: center;
   display: block;
+
 }
 
 .logo-h{
@@ -46,6 +56,12 @@
   position: absolute;
   left: 10%;
   margin-top: 8px;
+  @include breakpoint(baby-bear) {
+  height: 40px;
+  left: 2%;
+  margin-top: 12px;
+
+  }
 }
 
 #header {
@@ -56,6 +72,8 @@
   line-height:1.5;
   @include source-sans(400, 16px);
   text-align: right;
+  position: relative;
+
 }
 
 nav{
@@ -64,6 +82,10 @@ nav{
     color: white;
     padding: 5px 10%;
     cursor: pointer;
+    @include breakpoint(baby-bear) {
+      padding:5px  2%;
+
+    }
 
   a:active, a:visited {
     color:white;
@@ -75,6 +97,10 @@ nav{
       padding: 0 10px;
       margin: 0;
       text-decoration: none;
+      @include breakpoint(baby-bear) {
+        @include source-sans(400, 16px);
+
+      }
     }
     a::after{
       content: "|" ;

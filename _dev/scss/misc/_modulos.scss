@@ -1,6 +1,8 @@
 body{
   background: black;
 }
+
+
 .hero-uno{
   width: 100%;
   height: 680px;
@@ -17,6 +19,11 @@ rgba(0, 0, 0, 0.90)
 
   ;
   background-size: cover;
+
+  @include breakpoint(baby-bear) {
+    height: 550px;
+
+  }
 }
 
 

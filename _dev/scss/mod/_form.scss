@@ -4,6 +4,7 @@
   a{
     color:$dorado;
     line-height: inherit;
+    padding: 0;
   }
   p{
     line-height: 26px;
@@ -12,6 +13,16 @@
       @include source-sans(300, 20px);
   }
 
+  @include breakpoint(baby-bear) {
+    width: 80%;
+    p{
+      line-height: 22px;
+      padding:0;
+      margin:0 auto;
+        @include source-sans(300, 18px);
+    }
+}
+
 }
 form{
   width: 100%;
@@ -19,9 +30,15 @@ form{
 input{
   width: 40%;
   height: 40px;
+  @include breakpoint(baby-bear) {
+  width: 80%;
+}
 }
 textarea{
   width: 50%;
+  @include breakpoint(baby-bear) {
+  width: 80%;
+}
 }
 input, textarea{
   padding:5px;

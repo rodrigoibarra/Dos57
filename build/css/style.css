@@ -88,31 +88,37 @@ body {
   background: black;
 }
 
-/* line 4, ../../_dev/scss/misc/_modulos.scss */
+/* line 6, ../../_dev/scss/misc/_modulos.scss */
 .hero-uno {
   width: 100%;
   height: 680px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("/build/images/hero.jpg");
   background-size: cover;
 }
+@media (max-width: 590px) {
+  /* line 6, ../../_dev/scss/misc/_modulos.scss */
+  .hero-uno {
+    height: 550px;
+  }
+}
 
-/* line 23, ../../_dev/scss/misc/_modulos.scss */
+/* line 30, ../../_dev/scss/misc/_modulos.scss */
 .wrap {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 10%;
 }
 
-/* line 31, ../../_dev/scss/misc/_modulos.scss */
+/* line 38, ../../_dev/scss/misc/_modulos.scss */
 section {
   padding: 5% 0;
 }
-/* line 34, ../../_dev/scss/misc/_modulos.scss */
+/* line 41, ../../_dev/scss/misc/_modulos.scss */
 section:first-child {
   padding: 10% 0;
 }
 
-/* line 38, ../../_dev/scss/misc/_modulos.scss */
+/* line 45, ../../_dev/scss/misc/_modulos.scss */
 section.contacto {
   background: white;
   padding: 5%;
@@ -136,7 +142,7 @@ h1 {
   font-weight: 500;
   margin-bottom: 15px;
 }
-@media (max-width: 570px) {
+@media (max-width: 590px) {
   /* line 8, ../../_dev/scss/misc/_type.scss */
   h1 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -154,7 +160,7 @@ h2 {
   font-weight: 500;
   margin: 15px 0;
 }
-@media (max-width: 570px) {
+@media (max-width: 590px) {
   /* line 16, ../../_dev/scss/misc/_type.scss */
   h2 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -172,7 +178,7 @@ h3 {
   font-weight: 500;
   margin-bottom: 15px;
 }
-@media (max-width: 570px) {
+@media (max-width: 590px) {
   /* line 24, ../../_dev/scss/misc/_type.scss */
   h3 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -192,7 +198,7 @@ p:last-child {
   padding: 15 0 15px 0;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 590px) {
   /* line 43, ../../_dev/scss/misc/_type.scss */
   p {
     padding: 10px 0 0 0;
@@ -224,6 +230,28 @@ p:last-child {
   font-size: calculateRem(20px);
   font-weight: 300;
 }
+@media (max-width: 590px) {
+  /* line 1, ../../_dev/scss/mod/_punchline.scss */
+  .punch-line {
+    width: 90%;
+  }
+  /* line 17, ../../_dev/scss/mod/_punchline.scss */
+  .punch-line h1 {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+  /* line 22, ../../_dev/scss/mod/_punchline.scss */
+  .punch-line p {
+    line-height: 22px;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-size: calculateRem(18px);
+    font-weight: 300;
+  }
+}
 
 /* line 1, ../../_dev/scss/mod/_nav.scss */
 .hero-nav {
@@ -236,7 +264,18 @@ p:last-child {
   font-size: calculateRem(18px);
   font-weight: 400;
 }
-/* line 8, ../../_dev/scss/mod/_nav.scss */
+@media (max-width: 590px) {
+  /* line 1, ../../_dev/scss/mod/_nav.scss */
+  .hero-nav {
+    width: 80%;
+    padding: 20% 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-size: calculateRem(16px);
+    font-weight: 400;
+  }
+}
+/* line 14, ../../_dev/scss/mod/_nav.scss */
 .hero-nav a {
   display: inline-block;
   line-height: 11vh;
@@ -246,11 +285,11 @@ p:last-child {
   text-decoration: none;
   cursor: pointer;
 }
-/* line 18, ../../_dev/scss/mod/_nav.scss */
+/* line 25, ../../_dev/scss/mod/_nav.scss */
 .hero-nav a:active, .hero-nav a:visited {
   color: white;
 }
-/* line 22, ../../_dev/scss/mod/_nav.scss */
+/* line 29, ../../_dev/scss/mod/_nav.scss */
 .hero-nav a::after {
   content: "|";
   position: relative;
@@ -258,12 +297,12 @@ p:last-child {
   color: #AF8B2E;
   font-weight: bolder;
 }
-/* line 29, ../../_dev/scss/mod/_nav.scss */
+/* line 36, ../../_dev/scss/mod/_nav.scss */
 .hero-nav a:last-child::after {
   content: "";
 }
 
-/* line 35, ../../_dev/scss/mod/_nav.scss */
+/* line 44, ../../_dev/scss/mod/_nav.scss */
 .logo-m {
   width: 50%;
   margin: 0 auto;
@@ -271,7 +310,7 @@ p:last-child {
   display: block;
 }
 
-/* line 42, ../../_dev/scss/mod/_nav.scss */
+/* line 52, ../../_dev/scss/mod/_nav.scss */
 .logo-h {
   height: 50px;
   text-align: left;
@@ -280,8 +319,16 @@ p:last-child {
   left: 10%;
   margin-top: 8px;
 }
+@media (max-width: 590px) {
+  /* line 52, ../../_dev/scss/mod/_nav.scss */
+  .logo-h {
+    height: 40px;
+    left: 2%;
+    margin-top: 12px;
+  }
+}
 
-/* line 51, ../../_dev/scss/mod/_nav.scss */
+/* line 67, ../../_dev/scss/mod/_nav.scss */
 #header {
   background: black;
   z-index: 9000;
@@ -293,9 +340,10 @@ p:last-child {
   font-size: calculateRem(16px);
   font-weight: 400;
   text-align: right;
+  position: relative;
 }
 
-/* line 61, ../../_dev/scss/mod/_nav.scss */
+/* line 79, ../../_dev/scss/mod/_nav.scss */
 nav {
   width: 100%;
   text-align: right;
@@ -303,11 +351,17 @@ nav {
   padding: 5px 10%;
   cursor: pointer;
 }
-/* line 68, ../../_dev/scss/mod/_nav.scss */
+@media (max-width: 590px) {
+  /* line 79, ../../_dev/scss/mod/_nav.scss */
+  nav {
+    padding: 5px  2%;
+  }
+}
+/* line 90, ../../_dev/scss/mod/_nav.scss */
 nav a:active, nav a:visited {
   color: white;
 }
-/* line 72, ../../_dev/scss/mod/_nav.scss */
+/* line 94, ../../_dev/scss/mod/_nav.scss */
 nav a {
   display: inline-block;
   line-height: 11vh;
@@ -315,7 +369,16 @@ nav a {
   margin: 0;
   text-decoration: none;
 }
-/* line 79, ../../_dev/scss/mod/_nav.scss */
+@media (max-width: 590px) {
+  /* line 94, ../../_dev/scss/mod/_nav.scss */
+  nav a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-size: calculateRem(16px);
+    font-weight: 400;
+  }
+}
+/* line 105, ../../_dev/scss/mod/_nav.scss */
 nav a::after {
   content: "|";
   position: relative;
@@ -323,7 +386,7 @@ nav a::after {
   color: #AF8B2E;
   font-weight: bolder;
 }
-/* line 86, ../../_dev/scss/mod/_nav.scss */
+/* line 112, ../../_dev/scss/mod/_nav.scss */
 nav a:last-child::after {
   content: "";
 }
@@ -509,8 +572,9 @@ figure.effect-lily:hover p {
 .contacto_in a {
   color: #AF8B2E;
   line-height: inherit;
+  padding: 0;
 }
-/* line 8, ../../_dev/scss/mod/_form.scss */
+/* line 9, ../../_dev/scss/mod/_form.scss */
 .contacto_in p {
   line-height: 26px;
   padding: 0;
@@ -520,24 +584,52 @@ figure.effect-lily:hover p {
   font-size: calculateRem(20px);
   font-weight: 300;
 }
+@media (max-width: 590px) {
+  /* line 1, ../../_dev/scss/mod/_form.scss */
+  .contacto_in {
+    width: 80%;
+  }
+  /* line 18, ../../_dev/scss/mod/_form.scss */
+  .contacto_in p {
+    line-height: 22px;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-size: calculateRem(18px);
+    font-weight: 300;
+  }
+}
 
-/* line 16, ../../_dev/scss/mod/_form.scss */
+/* line 27, ../../_dev/scss/mod/_form.scss */
 form {
   width: 100%;
 }
 
-/* line 19, ../../_dev/scss/mod/_form.scss */
+/* line 30, ../../_dev/scss/mod/_form.scss */
 input {
   width: 40%;
   height: 40px;
 }
+@media (max-width: 590px) {
+  /* line 30, ../../_dev/scss/mod/_form.scss */
+  input {
+    width: 80%;
+  }
+}
 
-/* line 23, ../../_dev/scss/mod/_form.scss */
+/* line 37, ../../_dev/scss/mod/_form.scss */
 textarea {
   width: 50%;
 }
+@media (max-width: 590px) {
+  /* line 37, ../../_dev/scss/mod/_form.scss */
+  textarea {
+    width: 80%;
+  }
+}
 
-/* line 26, ../../_dev/scss/mod/_form.scss */
+/* line 43, ../../_dev/scss/mod/_form.scss */
 input, textarea {
   padding: 5px;
   margin: 5px  0;
@@ -545,7 +637,7 @@ input, textarea {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* line 33, ../../_dev/scss/mod/_form.scss */
+/* line 50, ../../_dev/scss/mod/_form.scss */
 .boton {
   padding: 5px;
   background: #AF8B2E;

@@ -12,5 +12,20 @@
     margin:0 auto;
       @include source-sans(300, 20px);
   }
+  @include breakpoint(baby-bear) {
+    width: 90%;
+    h1{
+      font-size: 36px;
+      line-height: 38px;
+      margin-bottom: 10px;
+    }
+    p{
+      line-height: 22px;
+      padding:0;
+      margin:0 auto;
+        @include source-sans(300, 18px);
+    }
+
+  }
 
 }
