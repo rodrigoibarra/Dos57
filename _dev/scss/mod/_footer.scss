@@ -1,5 +1,5 @@
 footer{
-  background:url("/build/images/patron.png");
+  background:url("./build/images/patron.png");
   background-size: 60%;
   height:100px;
 }
@@ -16,7 +16,7 @@ footer{
   width: 100%;
     text-align: right;
     color: white;
-    padding: 2% 10%;
+    padding: 2% 10% 0 10%;
     cursor: pointer;
 
     .logo-h{

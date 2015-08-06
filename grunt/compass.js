@@ -2,7 +2,7 @@ module.exports = {
   dev: {                   // Target
     options: {              // Target options
       sassDir: '_dev/scss/',
-      cssDir: 'build/css/',
+      cssDir: ['build/css/', './'],
       environment: 'development',
     }
   },
