@@ -72,7 +72,6 @@
   line-height:1.5;
   @include source-sans(400, 16px);
   text-align: right;
-  position: relative;
 
 }
 
@@ -113,3 +112,18 @@ nav{
       content: "";
     }
   }
+
+  // hide sticky nav from here on down...
+
+
+nav {
+  background: #f5b335;
+  height: 80px;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+// we'll add this class using javascript
+.nav-up {
+  top: -80px; // same as header height. use variables in LESS/SASS
+}
