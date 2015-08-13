@@ -176,8 +176,7 @@ h3 {
   font-size: 21px;
   font-size: calculateRem(21px);
   font-weight: 500;
-  margin-bottom: 15px;
-  max-width: 15%;
+  max-width: 20%;
   text-align: center;
   margin: 0 auto;
   background: #AF8B2E;
@@ -192,23 +191,23 @@ h3 {
   }
 }
 
-/* line 37, _dev/scss/misc/_type.scss */
+/* line 36, _dev/scss/misc/_type.scss */
 p {
   padding: 15px 0 0 0;
 }
 
-/* line 41, _dev/scss/misc/_type.scss */
+/* line 40, _dev/scss/misc/_type.scss */
 p:last-child {
   padding: 15 0 15px 0;
 }
 
 @media (max-width: 590px) {
-  /* line 47, _dev/scss/misc/_type.scss */
+  /* line 46, _dev/scss/misc/_type.scss */
   p {
     padding: 10px 0 0 0;
   }
 
-  /* line 51, _dev/scss/misc/_type.scss */
+  /* line 50, _dev/scss/misc/_type.scss */
   p:last-child {
     padding: 10 0 10px 0;
   }
@@ -221,7 +220,7 @@ p:last-child {
 /* line 4, _dev/scss/mod/_punchline.scss */
 .punch-line h1 {
   font-size: 46px;
-  line-height: 46x;
+  line-height: 46px;
   margin-bottom: 10px;
 }
 /* line 9, _dev/scss/mod/_punchline.scss */
@@ -509,21 +508,22 @@ nav a:last-child::after {
 /* line 90, _dev/scss/mod/_galeria.scss */
 figure.effect-lily img {
   max-width: none;
-  width: -webkit-calc(100% + 50px);
-  width: calc(100% + 50px);
+  width: -webkit-calc(99% + 1%);
+  width: calc(99% + 1%);
   opacity: 0.7;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-40px, 0, 0);
-  transform: translate3d(-40px, 0, 0);
+  -webkit-transform: translate3d(-1%, 0, 0);
+  transform: translate3d(-1%, 0, 0);
 }
 
 /* line 101, _dev/scss/mod/_galeria.scss */
 figure.effect-lily figcaption {
   text-align: left;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
 }
 
-/* line 105, _dev/scss/mod/_galeria.scss */
+/* line 113, _dev/scss/mod/_galeria.scss */
 figure.effect-lily figcaption > div {
   position: absolute;
   bottom: 0;
@@ -533,20 +533,20 @@ figure.effect-lily figcaption > div {
   height: 50%;
 }
 
-/* line 114, _dev/scss/mod/_galeria.scss */
+/* line 122, _dev/scss/mod/_galeria.scss */
 figure.effect-lily h2,
 figure.effect-lily p {
   -webkit-transform: translate3d(0, 40px, 0);
   transform: translate3d(0, 40px, 0);
 }
 
-/* line 120, _dev/scss/mod/_galeria.scss */
+/* line 128, _dev/scss/mod/_galeria.scss */
 figure.effect-lily h2 {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
 }
 
-/* line 125, _dev/scss/mod/_galeria.scss */
+/* line 133, _dev/scss/mod/_galeria.scss */
 figure.effect-lily p {
   color: rgba(255, 255, 255, 0.8);
   opacity: 0;
@@ -554,13 +554,14 @@ figure.effect-lily p {
   transition: opacity 0.2s, transform 0.35s;
 }
 
-/* line 132, _dev/scss/mod/_galeria.scss */
+/* line 140, _dev/scss/mod/_galeria.scss */
 figure.effect-lily:hover img,
 figure.effect-lily:hover p {
   opacity: 1;
+  background: rgba(0, 0, 0, 0.1);
 }
 
-/* line 137, _dev/scss/mod/_galeria.scss */
+/* line 146, _dev/scss/mod/_galeria.scss */
 figure.effect-lily:hover img,
 figure.effect-lily:hover h2,
 figure.effect-lily:hover p {
@@ -568,7 +569,7 @@ figure.effect-lily:hover p {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 144, _dev/scss/mod/_galeria.scss */
+/* line 153, _dev/scss/mod/_galeria.scss */
 figure.effect-lily:hover p {
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
@@ -591,6 +592,7 @@ figure.effect-lily:hover p {
   line-height: 26px;
   padding: 0;
   margin: 0 auto;
+  color: black;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   font-size: calculateRem(20px);
@@ -601,7 +603,7 @@ figure.effect-lily:hover p {
   .contacto_in {
     width: 80%;
   }
-  /* line 18, _dev/scss/mod/_form.scss */
+  /* line 19, _dev/scss/mod/_form.scss */
   .contacto_in p {
     line-height: 22px;
     padding: 0;
@@ -613,35 +615,35 @@ figure.effect-lily:hover p {
   }
 }
 
-/* line 27, _dev/scss/mod/_form.scss */
+/* line 28, _dev/scss/mod/_form.scss */
 form {
   width: 100%;
 }
 
-/* line 30, _dev/scss/mod/_form.scss */
+/* line 31, _dev/scss/mod/_form.scss */
 input {
   width: 40%;
   height: 40px;
 }
 @media (max-width: 590px) {
-  /* line 30, _dev/scss/mod/_form.scss */
+  /* line 31, _dev/scss/mod/_form.scss */
   input {
     width: 80%;
   }
 }
 
-/* line 37, _dev/scss/mod/_form.scss */
+/* line 38, _dev/scss/mod/_form.scss */
 textarea {
   width: 50%;
 }
 @media (max-width: 590px) {
-  /* line 37, _dev/scss/mod/_form.scss */
+  /* line 38, _dev/scss/mod/_form.scss */
   textarea {
     width: 80%;
   }
 }
 
-/* line 43, _dev/scss/mod/_form.scss */
+/* line 44, _dev/scss/mod/_form.scss */
 input, textarea {
   padding: 5px;
   margin: 5px  0;
@@ -649,7 +651,7 @@ input, textarea {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* line 50, _dev/scss/mod/_form.scss */
+/* line 51, _dev/scss/mod/_form.scss */
 .boton {
   padding: 5px;
   background: #AF8B2E;

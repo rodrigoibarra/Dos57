@@ -89,17 +89,25 @@
 
 figure.effect-lily img {
   max-width: none;
-	width: -webkit-calc(100% + 50px);
-	width: calc(100% + 50px);
+	width: -webkit-calc(99% + 1%);
+	width: calc(99% + 1%);
 	opacity: 0.7;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-40px,0, 0);
-	transform: translate3d(-40px,0,0);
+	-webkit-transform: translate3d(-1%,0, 0);
+	transform: translate3d(-1%,0,0);
 }
 
 figure.effect-lily figcaption {
 	text-align: left;
+  background:   linear-gradient(
+    rgba(0, 0, 0, 0.10),
+    rgba(0, 0, 0, 0.10)
+  ),
+  linear-gradient(
+  rgba(0, 0, 0, 0.10),
+  rgba(0, 0, 0, 0.30)
+  );
 }
 
 figure.effect-lily figcaption > div {
@@ -132,6 +140,7 @@ figure.effect-lily p {
 figure.effect-lily:hover img,
 figure.effect-lily:hover p {
 	opacity: 1;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 figure.effect-lily:hover img,

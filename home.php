@@ -3,7 +3,7 @@
 Template Name: portafolio
 */
  get_header(); ?>
-<?php include("includes/nav.php"); ?>
+<?php include("includes/main-nav.php"); ?>
     <div class="wrap cf">
       <section class="portafolio" id="portafolio">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

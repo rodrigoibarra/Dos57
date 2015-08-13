@@ -1,5 +1,5 @@
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
-<?php include("includes/nav.php"); ?>
+<?php include("includes/main-nav.php"); ?>
     <div class="wrap cf">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
