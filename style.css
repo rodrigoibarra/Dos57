@@ -344,10 +344,9 @@ p:last-child {
   font-size: calculateRem(16px);
   font-weight: 400;
   text-align: right;
-  position: relative;
 }
 
-/* line 79, _dev/scss/mod/_nav.scss */
+/* line 78, _dev/scss/mod/_nav.scss */
 nav {
   width: 100%;
   text-align: right;
@@ -356,16 +355,16 @@ nav {
   cursor: pointer;
 }
 @media (max-width: 590px) {
-  /* line 79, _dev/scss/mod/_nav.scss */
+  /* line 78, _dev/scss/mod/_nav.scss */
   nav {
     padding: 5px  2%;
   }
 }
-/* line 90, _dev/scss/mod/_nav.scss */
+/* line 89, _dev/scss/mod/_nav.scss */
 nav a:active, nav a:visited {
   color: white;
 }
-/* line 94, _dev/scss/mod/_nav.scss */
+/* line 93, _dev/scss/mod/_nav.scss */
 nav a {
   display: inline-block;
   line-height: 11vh;
@@ -374,7 +373,7 @@ nav a {
   text-decoration: none;
 }
 @media (max-width: 590px) {
-  /* line 94, _dev/scss/mod/_nav.scss */
+  /* line 93, _dev/scss/mod/_nav.scss */
   nav a {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
@@ -382,7 +381,7 @@ nav a {
     font-weight: 400;
   }
 }
-/* line 105, _dev/scss/mod/_nav.scss */
+/* line 104, _dev/scss/mod/_nav.scss */
 nav a::after {
   content: "|";
   position: relative;
@@ -390,9 +389,23 @@ nav a::after {
   color: #AF8B2E;
   font-weight: bolder;
 }
-/* line 112, _dev/scss/mod/_nav.scss */
+/* line 111, _dev/scss/mod/_nav.scss */
 nav a:last-child::after {
   content: "";
+}
+
+/* line 119, _dev/scss/mod/_nav.scss */
+nav {
+  background: #f5b335;
+  height: 80px;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+
+/* line 127, _dev/scss/mod/_nav.scss */
+.nav-up {
+  top: -80px;
 }
 
 /* line 2, _dev/scss/mod/_galeria.scss */
