@@ -29,6 +29,7 @@ h3{
   background: $dorado;
   @include breakpoint(baby-bear) {
       @include source-sans(700, 19px);
+      max-width: 40%;
   }
 }
 

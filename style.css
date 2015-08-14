@@ -115,7 +115,7 @@ section {
 }
 /* line 41, _dev/scss/misc/_modulos.scss */
 section:first-child {
-  padding: 10% 0;
+  padding: 10% 0 5% 0;
 }
 
 /* line 45, _dev/scss/misc/_modulos.scss */
@@ -188,26 +188,27 @@ h3 {
     font-size: 19px;
     font-size: calculateRem(19px);
     font-weight: 700;
+    max-width: 40%;
   }
 }
 
-/* line 36, _dev/scss/misc/_type.scss */
+/* line 37, _dev/scss/misc/_type.scss */
 p {
   padding: 15px 0 0 0;
 }
 
-/* line 40, _dev/scss/misc/_type.scss */
+/* line 41, _dev/scss/misc/_type.scss */
 p:last-child {
   padding: 15 0 15px 0;
 }
 
 @media (max-width: 590px) {
-  /* line 46, _dev/scss/misc/_type.scss */
+  /* line 47, _dev/scss/misc/_type.scss */
   p {
     padding: 10px 0 0 0;
   }
 
-  /* line 50, _dev/scss/misc/_type.scss */
+  /* line 51, _dev/scss/misc/_type.scss */
   p:last-child {
     padding: 10 0 10px 0;
   }
@@ -410,7 +411,7 @@ nav {
 /* line 2, _dev/scss/mod/_galeria.scss */
 .galeria {
   width: 32%;
-  height: 400px;
+  height: auto !important;
   margin-right: 2%;
   margin-top: 2%;
   float: left;
@@ -431,20 +432,30 @@ nav {
     margin-right: 2%;
   }
 }
+@media (max-width: 590px) {
+  /* line 2, _dev/scss/mod/_galeria.scss */
+  .galeria {
+    width: 100%;
+  }
+  /* line 22, _dev/scss/mod/_galeria.scss */
+  .galeria:nth-child(odd) {
+    margin-right: 2%;
+  }
+}
 
-/* line 22, _dev/scss/mod/_galeria.scss */
+/* line 29, _dev/scss/mod/_galeria.scss */
 .galeria figure {
   position: relative;
   float: left;
   overflow: hidden;
   margin: 10px 1%;
   max-height: 400px;
-  background: #4eb6c2;
+  background: black;
   text-align: center;
   cursor: pointer;
 }
 
-/* line 33, _dev/scss/mod/_galeria.scss */
+/* line 40, _dev/scss/mod/_galeria.scss */
 .galeria figure img {
   position: relative;
   display: block;
@@ -453,7 +464,7 @@ nav {
   opacity: 0.8;
 }
 
-/* line 41, _dev/scss/mod/_galeria.scss */
+/* line 48, _dev/scss/mod/_galeria.scss */
 .galeria figure figcaption {
   padding: 2em;
   color: #fff;
@@ -463,13 +474,13 @@ nav {
   backface-visibility: hidden;
 }
 
-/* line 50, _dev/scss/mod/_galeria.scss */
+/* line 57, _dev/scss/mod/_galeria.scss */
 .galeria figure figcaption::before,
 .galeria figure figcaption::after {
   pointer-events: none;
 }
 
-/* line 55, _dev/scss/mod/_galeria.scss */
+/* line 62, _dev/scss/mod/_galeria.scss */
 .galeria figure figcaption,
 .galeria figure figcaption > a {
   position: absolute;
@@ -479,7 +490,7 @@ nav {
   height: 100%;
 }
 
-/* line 64, _dev/scss/mod/_galeria.scss */
+/* line 71, _dev/scss/mod/_galeria.scss */
 .galeria figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
@@ -488,7 +499,7 @@ nav {
   opacity: 0;
 }
 
-/* line 72, _dev/scss/mod/_galeria.scss */
+/* line 79, _dev/scss/mod/_galeria.scss */
 .galeria figure h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
@@ -497,28 +508,29 @@ nav {
   margin: 15px 0;
 }
 @media (max-width: 590px) {
-  /* line 72, _dev/scss/mod/_galeria.scss */
+  /* line 79, _dev/scss/mod/_galeria.scss */
   .galeria figure h2 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     font-size: calculateRem(18px);
     font-weight: 300;
+    margin: 5px 0;
   }
 }
 
-/* line 80, _dev/scss/mod/_galeria.scss */
+/* line 88, _dev/scss/mod/_galeria.scss */
 .galeria figure h2,
 .galeria figure p {
   margin: 0;
 }
 
-/* line 85, _dev/scss/mod/_galeria.scss */
+/* line 93, _dev/scss/mod/_galeria.scss */
 .galeria figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
 
-/* line 90, _dev/scss/mod/_galeria.scss */
+/* line 98, _dev/scss/mod/_galeria.scss */
 figure.effect-lily img {
   max-width: none;
   width: -webkit-calc(99% + 1%);
@@ -530,13 +542,13 @@ figure.effect-lily img {
   transform: translate3d(-1%, 0, 0);
 }
 
-/* line 101, _dev/scss/mod/_galeria.scss */
+/* line 109, _dev/scss/mod/_galeria.scss */
 figure.effect-lily figcaption {
   text-align: left;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
 }
 
-/* line 113, _dev/scss/mod/_galeria.scss */
+/* line 121, _dev/scss/mod/_galeria.scss */
 figure.effect-lily figcaption > div {
   position: absolute;
   bottom: 0;
@@ -545,21 +557,27 @@ figure.effect-lily figcaption > div {
   width: 100%;
   height: 50%;
 }
+@media (max-width: 590px) {
+  /* line 121, _dev/scss/mod/_galeria.scss */
+  figure.effect-lily figcaption > div {
+    padding: 0;
+  }
+}
 
-/* line 122, _dev/scss/mod/_galeria.scss */
+/* line 135, _dev/scss/mod/_galeria.scss */
 figure.effect-lily h2,
 figure.effect-lily p {
   -webkit-transform: translate3d(0, 40px, 0);
   transform: translate3d(0, 40px, 0);
 }
 
-/* line 128, _dev/scss/mod/_galeria.scss */
+/* line 141, _dev/scss/mod/_galeria.scss */
 figure.effect-lily h2 {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
 }
 
-/* line 133, _dev/scss/mod/_galeria.scss */
+/* line 146, _dev/scss/mod/_galeria.scss */
 figure.effect-lily p {
   color: rgba(255, 255, 255, 0.8);
   opacity: 0;
@@ -567,14 +585,14 @@ figure.effect-lily p {
   transition: opacity 0.2s, transform 0.35s;
 }
 
-/* line 140, _dev/scss/mod/_galeria.scss */
+/* line 153, _dev/scss/mod/_galeria.scss */
 figure.effect-lily:hover img,
 figure.effect-lily:hover p {
   opacity: 1;
   background: rgba(0, 0, 0, 0.1);
 }
 
-/* line 146, _dev/scss/mod/_galeria.scss */
+/* line 159, _dev/scss/mod/_galeria.scss */
 figure.effect-lily:hover img,
 figure.effect-lily:hover h2,
 figure.effect-lily:hover p {
@@ -582,7 +600,7 @@ figure.effect-lily:hover p {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 153, _dev/scss/mod/_galeria.scss */
+/* line 166, _dev/scss/mod/_galeria.scss */
 figure.effect-lily:hover p {
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
@@ -677,32 +695,66 @@ input, textarea {
 footer {
   background: url("./build/images/patron.png");
   background-size: 60%;
-  height: 100px;
 }
 
-/* line 7, _dev/scss/mod/_footer.scss */
+/* line 6, _dev/scss/mod/_footer.scss */
 .social {
-  background: #AF8B2E;
-  border-radius: 50%;
-  padding: 5px;
   width: 50px;
-  fill: white;
 }
 
-/* line 15, _dev/scss/mod/_footer.scss */
+/* line 10, _dev/scss/mod/_footer.scss */
 .social__nav {
   width: 100%;
-  text-align: right;
   color: white;
   padding: 2% 10% 0 10%;
   cursor: pointer;
 }
-/* line 22, _dev/scss/mod/_footer.scss */
+/* line 15, _dev/scss/mod/_footer.scss */
 .social__nav .logo-h {
   margin-top: 0;
 }
 
-/* line 27, _dev/scss/mod/_footer.scss */
+/* line 20, _dev/scss/mod/_footer.scss */
+.logo-h__footer {
+  height: 50px;
+  display: inline-block;
+}
+@media (max-width: 590px) {
+  /* line 20, _dev/scss/mod/_footer.scss */
+  .logo-h__footer {
+    height: 40px;
+    left: 2%;
+    margin-top: 12px;
+  }
+}
+
+/* line 31, _dev/scss/mod/_footer.scss */
+.footer-stack {
+  width: 50%;
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+/* line 37, _dev/scss/mod/_footer.scss */
+.footer-stack:first-child {
+  float: left;
+  text-align: left;
+}
+@media (max-width: 590px) {
+  /* line 31, _dev/scss/mod/_footer.scss */
+  .footer-stack {
+    width: 100%;
+    display: block;
+    clear: both;
+    text-align: center;
+  }
+  /* line 44, _dev/scss/mod/_footer.scss */
+  .footer-stack:first-child {
+    text-align: center;
+  }
+}
+
+/* line 52, _dev/scss/mod/_footer.scss */
 a {
   display: inline-block;
   line-height: 11vh;
