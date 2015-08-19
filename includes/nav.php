@@ -1,4 +1,4 @@
-<nav id="header">
+<nav id="header" class="nav-up">
   <img src="<?php bloginfo('template_url'); ?>/build/images/logo-h.png" class="logo-h" alt="Dos Cincuentaysiete" />
   <a href="#nosotros">Nosotros</a>
   <a href="#portafolio">Portafolio</a>

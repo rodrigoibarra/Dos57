@@ -98,27 +98,27 @@ body {
 @media (max-width: 590px) {
   /* line 6, _dev/scss/misc/_modulos.scss */
   .hero-uno {
-    height: 550px;
+    height: 420px;
   }
 }
 
-/* line 30, _dev/scss/misc/_modulos.scss */
+/* line 31, _dev/scss/misc/_modulos.scss */
 .wrap {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 10%;
 }
 
-/* line 38, _dev/scss/misc/_modulos.scss */
+/* line 39, _dev/scss/misc/_modulos.scss */
 section {
   padding: 5% 0;
 }
-/* line 41, _dev/scss/misc/_modulos.scss */
+/* line 42, _dev/scss/misc/_modulos.scss */
 section:first-child {
   padding: 10% 0 5% 0;
 }
 
-/* line 45, _dev/scss/misc/_modulos.scss */
+/* line 46, _dev/scss/misc/_modulos.scss */
 section.contacto {
   background: white;
   padding: 5%;
@@ -268,18 +268,24 @@ p:last-child {
   font-size: calculateRem(18px);
   font-weight: 400;
 }
+@media (max-width: 720px) {
+  /* line 1, _dev/scss/mod/_nav.scss */
+  .hero-nav {
+    width: 90%;
+  }
+}
 @media (max-width: 590px) {
   /* line 1, _dev/scss/mod/_nav.scss */
   .hero-nav {
     width: 80%;
-    padding: 20% 0;
+    padding: 10% 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     font-size: calculateRem(16px);
     font-weight: 400;
   }
 }
-/* line 14, _dev/scss/mod/_nav.scss */
+/* line 17, _dev/scss/mod/_nav.scss */
 .hero-nav a {
   display: inline-block;
   line-height: 11vh;
@@ -289,11 +295,11 @@ p:last-child {
   text-decoration: none;
   cursor: pointer;
 }
-/* line 25, _dev/scss/mod/_nav.scss */
+/* line 28, _dev/scss/mod/_nav.scss */
 .hero-nav a:active, .hero-nav a:visited {
   color: white;
 }
-/* line 29, _dev/scss/mod/_nav.scss */
+/* line 32, _dev/scss/mod/_nav.scss */
 .hero-nav a::after {
   content: "|";
   position: relative;
@@ -301,12 +307,12 @@ p:last-child {
   color: #AF8B2E;
   font-weight: bolder;
 }
-/* line 36, _dev/scss/mod/_nav.scss */
+/* line 39, _dev/scss/mod/_nav.scss */
 .hero-nav a:last-child::after {
   content: "";
 }
 
-/* line 44, _dev/scss/mod/_nav.scss */
+/* line 47, _dev/scss/mod/_nav.scss */
 .logo-m {
   width: 50%;
   margin: 0 auto;
@@ -314,7 +320,7 @@ p:last-child {
   display: block;
 }
 
-/* line 52, _dev/scss/mod/_nav.scss */
+/* line 55, _dev/scss/mod/_nav.scss */
 .logo-h {
   height: 50px;
   text-align: left;
@@ -324,7 +330,7 @@ p:last-child {
   margin-top: 8px;
 }
 @media (max-width: 590px) {
-  /* line 52, _dev/scss/mod/_nav.scss */
+  /* line 55, _dev/scss/mod/_nav.scss */
   .logo-h {
     height: 40px;
     left: 2%;
@@ -332,7 +338,7 @@ p:last-child {
   }
 }
 
-/* line 67, _dev/scss/mod/_nav.scss */
+/* line 70, _dev/scss/mod/_nav.scss */
 #header {
   background: black;
   z-index: 9000;
@@ -346,7 +352,7 @@ p:last-child {
   text-align: right;
 }
 
-/* line 78, _dev/scss/mod/_nav.scss */
+/* line 81, _dev/scss/mod/_nav.scss */
 nav {
   width: 100%;
   text-align: right;
@@ -355,16 +361,16 @@ nav {
   cursor: pointer;
 }
 @media (max-width: 590px) {
-  /* line 78, _dev/scss/mod/_nav.scss */
+  /* line 81, _dev/scss/mod/_nav.scss */
   nav {
     padding: 5px  2%;
   }
 }
-/* line 89, _dev/scss/mod/_nav.scss */
+/* line 92, _dev/scss/mod/_nav.scss */
 nav a:active, nav a:visited {
   color: white;
 }
-/* line 93, _dev/scss/mod/_nav.scss */
+/* line 96, _dev/scss/mod/_nav.scss */
 nav a {
   display: inline-block;
   line-height: 11vh;
@@ -373,7 +379,7 @@ nav a {
   text-decoration: none;
 }
 @media (max-width: 590px) {
-  /* line 93, _dev/scss/mod/_nav.scss */
+  /* line 96, _dev/scss/mod/_nav.scss */
   nav a {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
@@ -381,7 +387,7 @@ nav a {
     font-weight: 400;
   }
 }
-/* line 104, _dev/scss/mod/_nav.scss */
+/* line 107, _dev/scss/mod/_nav.scss */
 nav a::after {
   content: "|";
   position: relative;
@@ -389,12 +395,12 @@ nav a::after {
   color: #AF8B2E;
   font-weight: bolder;
 }
-/* line 111, _dev/scss/mod/_nav.scss */
+/* line 114, _dev/scss/mod/_nav.scss */
 nav a:last-child::after {
   content: "";
 }
 
-/* line 119, _dev/scss/mod/_nav.scss */
+/* line 122, _dev/scss/mod/_nav.scss */
 nav {
   background: #f5b335;
   height: 80px;
@@ -403,7 +409,7 @@ nav {
   width: 100%;
 }
 
-/* line 127, _dev/scss/mod/_nav.scss */
+/* line 130, _dev/scss/mod/_nav.scss */
 .nav-up {
   top: -80px;
 }
@@ -621,7 +627,7 @@ figure.effect-lily:hover p {
 /* line 9, _dev/scss/mod/_form.scss */
 .contacto_in p {
   line-height: 26px;
-  padding: 0;
+  padding: 0 0 20px 0;
   margin: 0 auto;
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
@@ -637,7 +643,6 @@ figure.effect-lily:hover p {
   /* line 19, _dev/scss/mod/_form.scss */
   .contacto_in p {
     line-height: 22px;
-    padding: 0;
     margin: 0 auto;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
@@ -646,43 +651,60 @@ figure.effect-lily:hover p {
   }
 }
 
-/* line 28, _dev/scss/mod/_form.scss */
+/* line 27, _dev/scss/mod/_form.scss */
 form {
   width: 100%;
 }
 
 /* line 31, _dev/scss/mod/_form.scss */
-input {
+#simple-contact-form fieldset input {
   width: 40%;
   height: 40px;
-}
-@media (max-width: 590px) {
-  /* line 31, _dev/scss/mod/_form.scss */
-  input {
-    width: 80%;
-  }
-}
-
-/* line 38, _dev/scss/mod/_form.scss */
-textarea {
-  width: 50%;
-}
-@media (max-width: 590px) {
-  /* line 38, _dev/scss/mod/_form.scss */
-  textarea {
-    width: 80%;
-  }
-}
-
-/* line 44, _dev/scss/mod/_form.scss */
-input, textarea {
   padding: 5px;
   margin: 5px  0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 590px) {
+  /* line 31, _dev/scss/mod/_form.scss */
+  #simple-contact-form fieldset input {
+    width: 100%;
+  }
+}
 
-/* line 51, _dev/scss/mod/_form.scss */
+/* line 42, _dev/scss/mod/_form.scss */
+#simple-contact-form textarea {
+  width: 60%;
+}
+@media (max-width: 590px) {
+  /* line 42, _dev/scss/mod/_form.scss */
+  #simple-contact-form textarea {
+    width: 100%;
+  }
+}
+
+/* line 48, _dev/scss/mod/_form.scss */
+#simple-contact-form label {
+  display: none;
+}
+
+/* line 52, _dev/scss/mod/_form.scss */
+#simple-contact-form input[type=submit] {
+  padding: 10px;
+  background: #AF8B2E;
+  color: white;
+  font-size: 16px;
+  max-width: 15%;
+  height: 80px;
+}
+@media (max-width: 590px) {
+  /* line 52, _dev/scss/mod/_form.scss */
+  #simple-contact-form input[type=submit] {
+    max-width: 30%;
+  }
+}
+
+/* line 64, _dev/scss/mod/_form.scss */
 .boton {
   padding: 5px;
   background: #AF8B2E;
@@ -713,48 +735,55 @@ footer {
 .social__nav .logo-h {
   margin-top: 0;
 }
+@media (max-width: 590px) {
+  /* line 10, _dev/scss/mod/_footer.scss */
+  .social__nav {
+    padding: 6% 10% 0 10%;
+  }
+}
 
-/* line 20, _dev/scss/mod/_footer.scss */
+/* line 23, _dev/scss/mod/_footer.scss */
 .logo-h__footer {
   height: 50px;
   display: inline-block;
 }
 @media (max-width: 590px) {
-  /* line 20, _dev/scss/mod/_footer.scss */
+  /* line 23, _dev/scss/mod/_footer.scss */
   .logo-h__footer {
-    height: 40px;
+    height: 47px;
     left: 2%;
     margin-top: 12px;
   }
 }
 
-/* line 31, _dev/scss/mod/_footer.scss */
+/* line 34, _dev/scss/mod/_footer.scss */
 .footer-stack {
   width: 50%;
   display: inline-block;
   float: right;
   text-align: right;
+  padding: 15px;
 }
-/* line 37, _dev/scss/mod/_footer.scss */
+/* line 41, _dev/scss/mod/_footer.scss */
 .footer-stack:first-child {
   float: left;
   text-align: left;
 }
 @media (max-width: 590px) {
-  /* line 31, _dev/scss/mod/_footer.scss */
+  /* line 34, _dev/scss/mod/_footer.scss */
   .footer-stack {
     width: 100%;
     display: block;
     clear: both;
     text-align: center;
   }
-  /* line 44, _dev/scss/mod/_footer.scss */
+  /* line 48, _dev/scss/mod/_footer.scss */
   .footer-stack:first-child {
     text-align: center;
   }
 }
 
-/* line 52, _dev/scss/mod/_footer.scss */
+/* line 56, _dev/scss/mod/_footer.scss */
 a {
   display: inline-block;
   line-height: 11vh;

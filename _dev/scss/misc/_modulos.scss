@@ -19,9 +19,10 @@ rgba(0, 0, 0, 0.90)
 
   ;
   background-size: cover;
+  
 
   @include breakpoint(baby-bear) {
-    height: 550px;
+    height: 420px;
 
   }
 }

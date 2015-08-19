@@ -3,10 +3,13 @@
   margin: 0 auto;
   padding: 10% 0;
   text-align: center;
+  @media (max-width: 720px)  {
+  width: 90%;
+}
     @include source-sans(400, 18px);
     @include breakpoint(baby-bear) {
       width: 80%;
-      padding: 20% 0;
+      padding: 10% 0;
       @include source-sans(400, 16px);
 
     }
