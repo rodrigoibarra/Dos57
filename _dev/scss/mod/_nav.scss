@@ -60,10 +60,19 @@
   left: 10%;
   margin-top: 8px;
   @include breakpoint(baby-bear) {
-  height: 40px;
-  left: 2%;
-  margin-top: 12px;
+  display: none;
 
+  }
+}
+.resp-logo{
+  display: none;
+  @include breakpoint(baby-bear) {
+    height: 50px;
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    margin-top: 8px;
   }
 }
 
