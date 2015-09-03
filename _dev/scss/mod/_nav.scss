@@ -67,12 +67,12 @@
 .resp-logo{
   display: none;
   @include breakpoint(baby-bear) {
-    height: 50px;
+    height: 30px;
     text-align: left;
     display: inline-block;
     position: absolute;
     left: 10%;
-    margin-top: 8px;
+    margin-top: 20px;
   }
 }
 

@@ -343,12 +343,12 @@ p:last-child {
 @media (max-width: 590px) {
   /* line 67, _dev/scss/mod/_nav.scss */
   .resp-logo {
-    height: 50px;
+    height: 30px;
     text-align: left;
     display: inline-block;
     position: absolute;
     left: 10%;
-    margin-top: 8px;
+    margin-top: 20px;
   }
 }
 
@@ -710,15 +710,16 @@ form {
   font-size: 16px;
   max-width: 15%;
   height: 80px;
+  margin-top: 15px;
 }
 @media (max-width: 590px) {
   /* line 52, _dev/scss/mod/_form.scss */
   #simple-contact-form input[type=submit] {
-    max-width: 30%;
+    max-width: 40%;
   }
 }
 
-/* line 64, _dev/scss/mod/_form.scss */
+/* line 65, _dev/scss/mod/_form.scss */
 .boton {
   padding: 5px;
   background: #AF8B2E;
