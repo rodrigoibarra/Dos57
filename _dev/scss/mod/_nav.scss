@@ -139,3 +139,19 @@ nav {
 .nav-up {
   top: -80px; // same as header height. use variables in LESS/SASS
 }
+
+.post-nav{
+  text-align: center;
+    a{
+      display: inline-block;
+      @include source-sans(500, 21px);
+      max-width: 20%;
+      text-align: center;;
+      margin:0 auto;
+      background: $dorado;
+      @include breakpoint(baby-bear) {
+          @include source-sans(700, 19px);
+          max-width: 40%;
+      }
+    }
+}

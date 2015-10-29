@@ -7,13 +7,17 @@
 </div>
 
     <div class="wrap cf">
-      <section class="single-post">
+      <section class="single-post cf">
                 <?php the_content() ?>
       </section>
 
+      <div class="post-nav">
+        <<?php previous_post('&laquo; &laquo; % ','Anterior','no'); ?> | <?php next_post('% &raquo; &raquo;', 'Siguiente', 'no'); ?>
+      </div>
+      <div style="text-align: center;">
 
-
+</div>
     </div>
-  <?php endwhile; endif; ?>
 
+  <?php endwhile; endif; ?>
   <?php get_footer(); ?>

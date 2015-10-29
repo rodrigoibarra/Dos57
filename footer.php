@@ -5,17 +5,12 @@
           <img src="<?php bloginfo('template_url'); ?>/build/images/logo-h.png" class="logo-h__footer" alt="Dos Cincuentaysiete" />
     </div>
     <div class="footer-stack">
-      <a href="">   <?php include("includes/instagram.svg"); ?>  </a>
-      <a href="">   <?php include("includes/facebook.svg"); ?>  </a>
-      <a href=""> <?php include("includes/pinterest.svg"); ?>  </a>
+      <a href="https://instagram.com/dos57studio/"><?php include("includes/instagram.svg"); ?></a>
+      <a href="https://www.facebook.com/dos57studio"><?php include("includes/facebook.svg"); ?></a>
+      <a href="https://www.pinterest.com/dos57studio/"><?php include("includes/pinterest.svg"); ?></a>
     </div>
   </div>
-
-    <?php
-
-  wp_footer();
-
-  ?>
+    <?php  wp_footer();  ?>
 </footer>
 </body>
 </html>
