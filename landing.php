@@ -17,14 +17,16 @@ Template Name: home
 
         if (have_posts()) : while (have_posts()) : the_post(); ?>
           <div class="galeria" >
+            <a href="<?php the_permalink(); ?>">
             <figure class="effect-lily">
               <img src="<?php the_field('thumbnail'); ?>" alt="<?php the_title(); ?>"/>
               <figcaption>
                 <div>
-                  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                  <h2><?php the_title(); ?></h2>
                 </div>
               </figcaption>
             </figure>
+            </a>
           </div>
       		<?php endwhile; endif; ?>
 
