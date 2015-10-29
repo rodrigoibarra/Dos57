@@ -876,13 +876,14 @@ p {
   color: white;
 }
 
-/* line 27, _dev/scss/mod/_single.scss */
-.single-post img {
+/* line 26, _dev/scss/mod/_single.scss */
+section.single-post img {
   width: 50%;
   float: left;
 }
-/* line 31, _dev/scss/mod/_single.scss */
-.single-post img:first-of-type {
+
+/* line 30, _dev/scss/mod/_single.scss */
+section.single-post img:first-of-type {
   width: 100%;
   float: none;
 }
