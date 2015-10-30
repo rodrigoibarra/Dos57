@@ -58,7 +58,7 @@
   display: inline-block;
   position: absolute;
   left: 10%;
-  margin-top: 8px;
+  top:10px;
   @include breakpoint(baby-bear) {
   display: none;
 
@@ -113,12 +113,16 @@ nav{
 
       }
     }
+
     a::after{
       content: "|" ;
       position: relative;
       left: 10px;
       color: $dorado;
       font-weight: bolder;
+    }
+    a:first-child::after{
+      content: "" ;
     }
     a:last-child::after{
       content: "";

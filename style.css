@@ -327,7 +327,7 @@ p:last-child {
   display: inline-block;
   position: absolute;
   left: 10%;
-  margin-top: 8px;
+  top: 10px;
 }
 @media (max-width: 590px) {
   /* line 55, _dev/scss/mod/_nav.scss */
@@ -401,7 +401,7 @@ nav a {
     font-weight: 400;
   }
 }
-/* line 116, _dev/scss/mod/_nav.scss */
+/* line 117, _dev/scss/mod/_nav.scss */
 nav a::after {
   content: "|";
   position: relative;
@@ -409,12 +409,16 @@ nav a::after {
   color: #AF8B2E;
   font-weight: bolder;
 }
-/* line 123, _dev/scss/mod/_nav.scss */
+/* line 124, _dev/scss/mod/_nav.scss */
+nav a:first-child::after {
+  content: "";
+}
+/* line 127, _dev/scss/mod/_nav.scss */
 nav a:last-child::after {
   content: "";
 }
 
-/* line 131, _dev/scss/mod/_nav.scss */
+/* line 135, _dev/scss/mod/_nav.scss */
 nav {
   background: #f5b335;
   height: 80px;
@@ -423,16 +427,16 @@ nav {
   width: 100%;
 }
 
-/* line 139, _dev/scss/mod/_nav.scss */
+/* line 143, _dev/scss/mod/_nav.scss */
 .nav-up {
   top: -80px;
 }
 
-/* line 143, _dev/scss/mod/_nav.scss */
+/* line 147, _dev/scss/mod/_nav.scss */
 .post-nav {
   text-align: center;
 }
-/* line 145, _dev/scss/mod/_nav.scss */
+/* line 149, _dev/scss/mod/_nav.scss */
 .post-nav a {
   display: inline-block;
   font-family: 'Source Sans Pro', sans-serif;
@@ -445,7 +449,7 @@ nav {
   background: #AF8B2E;
 }
 @media (max-width: 590px) {
-  /* line 145, _dev/scss/mod/_nav.scss */
+  /* line 149, _dev/scss/mod/_nav.scss */
   .post-nav a {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 19px;
@@ -839,13 +843,13 @@ a {
 /* line 1, _dev/scss/mod/_single.scss */
 .hero {
   width: 100%;
-  height: 680px;
+  height: 500px;
   background-size: cover;
 }
 @media (max-width: 590px) {
   /* line 1, _dev/scss/mod/_single.scss */
   .hero {
-    height: 550px;
+    height: 500px;
   }
 }
 
@@ -853,12 +857,12 @@ a {
 h1.titulo {
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 36px;
-  font-size: calculateRem(36px);
+  font-size: 64px;
+  font-size: calculateRem(64px);
   font-weight: 500;
   margin-bottom: 15px;
   position: absolute;
-  bottom: 10px;
+  bottom: -10px;
   padding: 5%;
 }
 @media (max-width: 590px) {
@@ -874,15 +878,21 @@ h1.titulo {
 /* line 22, _dev/scss/mod/_single.scss */
 p {
   color: white;
+  font-size: 16px;
 }
 
-/* line 26, _dev/scss/mod/_single.scss */
+/* line 27, _dev/scss/mod/_single.scss */
+section.single-post {
+  padding: 1% 0 5% 0;
+}
+
+/* line 32, _dev/scss/mod/_single.scss */
 section.single-post img {
   width: 50%;
   float: left;
 }
 
-/* line 30, _dev/scss/mod/_single.scss */
+/* line 36, _dev/scss/mod/_single.scss */
 section.single-post img:first-of-type {
   width: 100%;
   float: none;
