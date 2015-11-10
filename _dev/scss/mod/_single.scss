@@ -12,10 +12,18 @@
   position: absolute;
   bottom:-10px;
   padding:3% 10%;
+
+  p{
+    padding-top: 0;
+    padding-bottom: 30px;
+    max-width: 700px;
+  }
 }
 h1.titulo{
   color:white;
   @include source-sans(500, 64px);
+  margin-bottom: 0;
+  padding-bottom: 0;
     @include breakpoint(baby-bear) {
         @include source-sans(700, 28px);
     }

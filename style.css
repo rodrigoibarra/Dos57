@@ -766,22 +766,31 @@ form {
 
 /* line 52, _dev/scss/mod/_form.scss */
 #simple-contact-form input[type=submit] {
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 21px;
+  font-size: calculateRem(21px);
+  font-weight: 500;
+  min-width: 200px;
+  margin: 0 auto;
   background: #AF8B2E;
   color: white;
-  font-size: 16px;
-  min-width: 200px;
   height: 80px;
+  text-align: center;
   border: none;
-  margin-top: 15px;
 }
 @media (max-width: 590px) {
   /* line 52, _dev/scss/mod/_form.scss */
   #simple-contact-form input[type=submit] {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    font-size: calculateRem(19px);
+    font-weight: 700;
     min-width: 100px;
   }
 }
 
-/* line 65, _dev/scss/mod/_form.scss */
+/* line 68, _dev/scss/mod/_form.scss */
 .boton {
   padding: 5px;
   background: #AF8B2E;
@@ -891,17 +900,25 @@ a {
   bottom: -10px;
   padding: 3% 10%;
 }
-
 /* line 16, _dev/scss/mod/_single.scss */
+.intro p {
+  padding-top: 0;
+  padding-bottom: 30px;
+  max-width: 700px;
+}
+
+/* line 22, _dev/scss/mod/_single.scss */
 h1.titulo {
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 64px;
   font-size: calculateRem(64px);
   font-weight: 500;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 @media (max-width: 590px) {
-  /* line 16, _dev/scss/mod/_single.scss */
+  /* line 22, _dev/scss/mod/_single.scss */
   h1.titulo {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 28px;
@@ -910,25 +927,25 @@ h1.titulo {
   }
 }
 
-/* line 24, _dev/scss/mod/_single.scss */
+/* line 32, _dev/scss/mod/_single.scss */
 p {
   color: white;
   font-size: 16px;
   margin-bottom: 15px;
 }
 
-/* line 30, _dev/scss/mod/_single.scss */
+/* line 38, _dev/scss/mod/_single.scss */
 section.single-post {
   padding: 1% 0 5% 0;
 }
 
-/* line 35, _dev/scss/mod/_single.scss */
+/* line 43, _dev/scss/mod/_single.scss */
 section.single-post img {
   width: 50%;
   float: left;
 }
 
-/* line 39, _dev/scss/mod/_single.scss */
+/* line 47, _dev/scss/mod/_single.scss */
 section.single-post img:first-of-type {
   width: 100%;
   float: none;
