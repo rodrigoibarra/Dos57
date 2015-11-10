@@ -54,11 +54,11 @@ form{
   background: #AF8B2E;
   color: white;
   font-size:16px;
-  max-width:15%;
+  min-width: 200px;
   height:80px;
   margin-top: 15px;
   @include breakpoint(baby-bear) {
-  max-width: 40%;
+  min-width: 100px;
   }
 }
 

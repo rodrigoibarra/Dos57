@@ -23,13 +23,13 @@ h2{
 
 h3{
   @include source-sans(500, 21px);
-  max-width: 20%;
+  min-width: 200px;
   text-align: center;;
   margin:0 auto;
   background: $dorado;
   @include breakpoint(baby-bear) {
       @include source-sans(700, 19px);
-      max-width: 40%;
+      min-width: 100px;
   }
 }
 
