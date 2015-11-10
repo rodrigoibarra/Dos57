@@ -7,13 +7,15 @@
 
   }
 }
-h1.titulo{
-  color:white;
-  @include source-sans(500, 64px);
+.intro{
   margin-bottom:15px;
   position: absolute;
   bottom:-10px;
   padding:3% 10%;
+}
+h1.titulo{
+  color:white;
+  @include source-sans(500, 64px);
     @include breakpoint(baby-bear) {
         @include source-sans(700, 28px);
     }
@@ -27,8 +29,7 @@ p{
 
 section.single-post{
   padding:1% 0 5% 0;
-  position: relative;
-  bottom: 100px;
+
 }
 
 section.single-post img{

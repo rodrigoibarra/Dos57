@@ -50,12 +50,12 @@ form{
 }
 
 #simple-contact-form input[type=submit]{
-  padding: 10px;
   background: #AF8B2E;
   color: white;
   font-size:16px;
   min-width: 200px;
   height:80px;
+  border: none;
   margin-top: 15px;
   @include breakpoint(baby-bear) {
   min-width: 100px;
