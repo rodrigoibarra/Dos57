@@ -10,7 +10,7 @@
     @include breakpoint(baby-bear) {
       width: 80%;
       padding: 10% 0;
-      @include source-sans(400, 16px);
+      @include source-sans(400, 12px);
 
     }
 
@@ -109,7 +109,7 @@ nav{
       margin: 0;
       text-decoration: none;
       @include breakpoint(baby-bear) {
-        @include source-sans(400, 16px);
+        @include source-sans(400, 12px);
 
       }
     }
@@ -149,13 +149,13 @@ nav {
     a{
       display: inline-block;
       @include source-sans(500, 21px);
-      max-width: 20%;
+      min-width: 200px;
       text-align: center;;
       margin:0 auto;
       background: $dorado;
       @include breakpoint(baby-bear) {
           @include source-sans(700, 19px);
-          max-width: 40%;
+          min-width: 100px;
       }
     }
 }

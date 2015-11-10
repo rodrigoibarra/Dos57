@@ -280,8 +280,8 @@ p:last-child {
     width: 80%;
     padding: 10% 0;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    font-size: calculateRem(16px);
+    font-size: 12px;
+    font-size: calculateRem(12px);
     font-weight: 400;
   }
 }
@@ -396,8 +396,8 @@ nav a {
   /* line 105, _dev/scss/mod/_nav.scss */
   nav a {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    font-size: calculateRem(16px);
+    font-size: 12px;
+    font-size: calculateRem(12px);
     font-weight: 400;
   }
 }
@@ -443,7 +443,7 @@ nav {
   font-size: 21px;
   font-size: calculateRem(21px);
   font-weight: 500;
-  max-width: 20%;
+  min-width: 200px;
   text-align: center;
   margin: 0 auto;
   background: #AF8B2E;
@@ -455,7 +455,7 @@ nav {
     font-size: 19px;
     font-size: calculateRem(19px);
     font-weight: 700;
-    max-width: 40%;
+    min-width: 100px;
   }
 }
 
@@ -879,20 +879,23 @@ h1.titulo {
 p {
   color: white;
   font-size: 16px;
+  margin-bottom: 15px;
 }
 
-/* line 27, _dev/scss/mod/_single.scss */
+/* line 28, _dev/scss/mod/_single.scss */
 section.single-post {
   padding: 1% 0 5% 0;
+  position: relative;
+  bottom: 100px;
 }
 
-/* line 32, _dev/scss/mod/_single.scss */
+/* line 34, _dev/scss/mod/_single.scss */
 section.single-post img {
   width: 50%;
   float: left;
 }
 
-/* line 36, _dev/scss/mod/_single.scss */
+/* line 38, _dev/scss/mod/_single.scss */
 section.single-post img:first-of-type {
   width: 100%;
   float: none;
