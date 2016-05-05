@@ -7,13 +7,23 @@
 
   }
 }
-h1.titulo{
-  color:white;
-  @include source-sans(500, 64px);
+.intro{
   margin-bottom:15px;
   position: absolute;
   bottom:-10px;
-  padding:5%;
+  padding:3% 10%;
+
+  p{
+    padding-top: 0;
+    padding-bottom: 30px;
+    max-width: 700px;
+  }
+}
+h1.titulo{
+  color:white;
+  @include source-sans(500, 64px);
+  margin-bottom: 0;
+  padding-bottom: 0;
     @include breakpoint(baby-bear) {
         @include source-sans(700, 28px);
     }
@@ -22,6 +32,7 @@ h1.titulo{
 p{
   color: white;
   font-size: 16px;
+  margin-bottom: 15px;
 }
 
 section.single-post{

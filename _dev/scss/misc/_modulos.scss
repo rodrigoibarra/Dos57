@@ -19,7 +19,7 @@ rgba(0, 0, 0, 0.90)
 
   ;
   background-size: cover;
-  
+
 
   @include breakpoint(baby-bear) {
     height: 420px;
@@ -29,11 +29,14 @@ rgba(0, 0, 0, 0.90)
 
 
 .wrap{
-  width: 90%;
+  width: 80%;
   margin: 0 auto;;
   margin-bottom: 10%;
-}
+  @include breakpoint(baby-bear) {
+  width: 90%;
 
+  }
+}
 
 
 section{
@@ -45,5 +48,4 @@ section{
 }
 section.contacto{
   background: white;
-  padding:5% ;
 }

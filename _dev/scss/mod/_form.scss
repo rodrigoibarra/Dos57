@@ -50,15 +50,18 @@ form{
 }
 
 #simple-contact-form input[type=submit]{
-  padding: 10px;
-  background: #AF8B2E;
+  display: inline-block;
+  @include source-sans(500, 21px);
+  min-width: 200px;
+  margin:0 auto;
+  background: $dorado;
   color: white;
-  font-size:16px;
-  max-width:15%;
-  height:80px;
-  margin-top: 15px;
+  height: 80px;
+  text-align: center;
+  border: none;
   @include breakpoint(baby-bear) {
-  max-width: 40%;
+      @include source-sans(700, 19px);
+      min-width: 100px;
   }
 }
 
