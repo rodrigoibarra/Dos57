@@ -17,7 +17,7 @@ h2{
   @include source-sans(500, 28px);
   margin:15px 0;
   @include breakpoint(baby-bear) {
-      @include source-sans(300, 22px);
+      @include source-sans(500, 22px);
   }
 }
 

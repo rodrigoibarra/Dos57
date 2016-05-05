@@ -53,7 +53,11 @@ form{
   display: inline-block;
   @include source-sans(500, 21px);
   min-width: 200px;
+<<<<<<< HEAD
   margin:0 auto;
+=======
+  margin:15px auto;
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
   background: $dorado;
   color: white;
   height: 80px;

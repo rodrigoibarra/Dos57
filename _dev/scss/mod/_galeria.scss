@@ -80,7 +80,7 @@
   @include source-sans(500, 24px);
   margin:15px 0;
   @include breakpoint(baby-bear) {
-      @include source-sans(300, 18px);
+      @include source-sans(500, 18px);
       margin:5px 0;
   }
 }
@@ -127,7 +127,7 @@ figure.effect-lily figcaption > div {
 	height: 50%;
 
   @include breakpoint(baby-bear) {
-      padding:0;
+      padding:1em;
   }
 
 }

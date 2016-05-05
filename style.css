@@ -172,7 +172,11 @@ h2 {
     font-family: 'Noticia Text', serif;
     font-size: 22px;
     font-size: calculateRem(22px);
+<<<<<<< HEAD
     font-weight: 700;
+=======
+    font-weight: 500;
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
   }
 }
 
@@ -181,7 +185,11 @@ h3 {
   font-family: 'Noticia Text', serif;
   font-size: 21px;
   font-size: calculateRem(21px);
+<<<<<<< HEAD
   font-weight: 700;
+=======
+  font-weight: 500;
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
   min-width: 200px;
   text-align: center;
   margin: 0 auto;
@@ -472,7 +480,11 @@ nav {
   }
 }
 
+<<<<<<< HEAD
 /* line 168, _dev/scss/mod/_nav.scss */
+=======
+/* line 159, _dev/scss/mod/_nav.scss */
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
 a.botton {
   display: inline-block;
   font-family: 'Source Sans Pro', sans-serif;
@@ -486,11 +498,17 @@ a.botton {
   position: absolute;
   border: none;
   left: 40%;
+<<<<<<< HEAD
   height: 60px;
   line-height: 60px;
 }
 @media (max-width: 590px) {
   /* line 168, _dev/scss/mod/_nav.scss */
+=======
+}
+@media (max-width: 590px) {
+  /* line 159, _dev/scss/mod/_nav.scss */
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
   a.botton {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 19px;
@@ -602,9 +620,15 @@ a.botton {
 @media (max-width: 590px) {
   /* line 79, _dev/scss/mod/_galeria.scss */
   .galeria figure h2 {
+<<<<<<< HEAD
     font-family: 'Noticia Text', serif;
     font-size: 16px;
     font-size: calculateRem(16px);
+=======
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-size: calculateRem(18px);
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
     font-weight: 500;
     margin: 5px 0;
   }
@@ -782,6 +806,7 @@ form {
   font-size: calculateRem(21px);
   font-weight: 500;
   min-width: 200px;
+<<<<<<< HEAD
   margin: 30px auto;
   background: #AF8B2E;
   color: white;
@@ -791,6 +816,14 @@ form {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+=======
+  margin: 15px auto;
+  background: #AF8B2E;
+  color: white;
+  height: 80px;
+  text-align: center;
+  border: none;
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
 }
 @media (max-width: 590px) {
   /* line 52, _dev/scss/mod/_form.scss */
@@ -803,7 +836,11 @@ form {
   }
 }
 
+<<<<<<< HEAD
 /* line 71, _dev/scss/mod/_form.scss */
+=======
+/* line 68, _dev/scss/mod/_form.scss */
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
 .boton {
   padding: 5px;
   background: #AF8B2E;
@@ -909,18 +946,30 @@ a {
 /* line 10, _dev/scss/mod/_single.scss */
 .intro {
   margin-bottom: 15px;
+<<<<<<< HEAD
   position: relative;
   bottom: -160px;
   padding: 3% 10%;
 }
 /* line 15, _dev/scss/mod/_single.scss */
+=======
+  position: absolute;
+  bottom: -10px;
+  padding: 3% 10%;
+}
+/* line 16, _dev/scss/mod/_single.scss */
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
 .intro p {
   padding-top: 0;
   padding-bottom: 30px;
   max-width: 700px;
 }
 
+<<<<<<< HEAD
 /* line 21, _dev/scss/mod/_single.scss */
+=======
+/* line 22, _dev/scss/mod/_single.scss */
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
 h1.titulo {
   color: white;
   font-family: 'Noticia Text', serif;
@@ -931,7 +980,11 @@ h1.titulo {
   padding-bottom: 0;
 }
 @media (max-width: 590px) {
+<<<<<<< HEAD
   /* line 21, _dev/scss/mod/_single.scss */
+=======
+  /* line 22, _dev/scss/mod/_single.scss */
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
   h1.titulo {
     font-family: 'Noticia Text', serif;
     font-size: 28px;
@@ -940,19 +993,31 @@ h1.titulo {
   }
 }
 
+<<<<<<< HEAD
 /* line 31, _dev/scss/mod/_single.scss */
+=======
+/* line 32, _dev/scss/mod/_single.scss */
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
 p {
   color: white;
   font-size: 16px;
   margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 /* line 37, _dev/scss/mod/_single.scss */
+=======
+/* line 38, _dev/scss/mod/_single.scss */
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
 section.single-post {
   padding: 1% 0 5% 0;
 }
 
+<<<<<<< HEAD
 /* line 42, _dev/scss/mod/_single.scss */
+=======
+/* line 43, _dev/scss/mod/_single.scss */
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
 section.single-post img {
   width: 50%;
   float: left;
@@ -961,7 +1026,11 @@ section.single-post img {
   padding-top: 15px;
 }
 
+<<<<<<< HEAD
 /* line 49, _dev/scss/mod/_single.scss */
+=======
+/* line 47, _dev/scss/mod/_single.scss */
+>>>>>>> 4ba1db59546f81798be6deda45a4856d3ad4991a
 section.single-post img:first-of-type {
   width: 100%;
   float: none;
