@@ -16,22 +16,18 @@ Template Name: home
         <?php $i = 1; query_posts('posts_per_page=6');
 
         if (have_posts()) : while (have_posts()) : the_post(); ?>
-          <div class="galeria" >
-            <a href="<?php the_permalink(); ?>">
-            <figure class="effect-lily">
+            <a class="galeria" href="<?php the_permalink(); ?>">
+                <div class="fig">
               <img src="<?php the_field('thumbnail'); ?>" alt="<?php the_title(); ?>"/>
-              <figcaption>
-                <div>
                   <h2><?php the_title(); ?></h2>
                 </div>
-              </figcaption>
-            </figure>
             </a>
-          </div>
       		<?php endwhile; endif; ?>
 
       </section>
-      <a class="botton" href="/portafolio">Ver todos</a>
+      <div class="ver">
+        <a class="botton" href="/portafolio">Ver todos</a>
+      </div>
     </div>
     <section class="contacto" id="contacto">
       <div class="wrap">

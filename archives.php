@@ -4,16 +4,12 @@
       <section class="portafolio" id="portafolio">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          <div class="galeria" >
-            <figure class="effect-lily">
-              <img src="<?php the_field('thumbnail'); ?>" alt="<?php the_title(); ?>"/>
-              <figcaption>
-                <div>
-                  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
+          <a class="galeria" href="<?php the_permalink(); ?>">
+              <div class="fig">
+            <img src="<?php the_field('thumbnail'); ?>" alt="<?php the_title(); ?>"/>
+                <h2><?php the_title(); ?></h2>
+              </div>
+          </a>
       		<?php endwhile; endif; ?>
       </section>
     </div>

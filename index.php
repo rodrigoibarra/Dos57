@@ -3,7 +3,12 @@
     <div class="wrap cf">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <?php the_content() ?>
+            <a class="galeria" href="<?php the_permalink(); ?>">
+                <div class="fig">
+              <img src="<?php the_field('thumbnail'); ?>" alt="<?php the_title(); ?>"/>
+                  <h2><?php the_title(); ?></h2>
+                </div>
+            </a>
 
             <?php endwhile; endif; ?>
     </div>
