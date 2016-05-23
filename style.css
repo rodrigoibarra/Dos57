@@ -85,7 +85,7 @@ table {
 /* For IE 6/7 (trigger hasLayout) */
 /* line 1, _dev/scss/misc/_modulos.scss */
 body {
-  background: black;
+  background: white;
 }
 
 /* line 6, _dev/scss/misc/_modulos.scss */
@@ -124,10 +124,9 @@ section {
 section:first-child {
   padding: 10% 0 5% 0;
 }
-
-/* line 49, _dev/scss/misc/_modulos.scss */
-section.contacto {
-  background: white;
+/* line 48, _dev/scss/misc/_modulos.scss */
+section.single-post {
+  padding: 3% 0 5% 0;
 }
 
 /* line 2, _dev/scss/misc/_type.scss */
@@ -222,7 +221,7 @@ p:last-child {
 /* line 1, _dev/scss/mod/_punchline.scss */
 .punch-line {
   width: 70%;
-  color: white;
+  color: black;
 }
 /* line 4, _dev/scss/mod/_punchline.scss */
 .punch-line h1 {
@@ -699,7 +698,7 @@ form {
 
 /* line 1, _dev/scss/mod/_footer.scss */
 footer {
-  background: url("./build/images/patron.png");
+  background: url("./build/images/patron.png"), black;
   background-size: 60%;
 }
 
@@ -793,7 +792,7 @@ a {
 
 /* line 10, _dev/scss/mod/_single.scss */
 .intro {
-  margin-bottom: 15px;
+  margin-bottom: 80px;
   position: absolute;
   bottom: -10px;
   padding: 3% 10%;
@@ -827,7 +826,7 @@ h1.titulo {
 
 /* line 32, _dev/scss/mod/_single.scss */
 p {
-  color: white;
+  color: black;
   font-size: 16px;
   margin-bottom: 15px;
 }

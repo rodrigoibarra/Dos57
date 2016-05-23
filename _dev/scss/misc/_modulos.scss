@@ -1,5 +1,5 @@
 body{
-  background: black;
+  background: white;
 }
 
 
@@ -10,11 +10,11 @@ body{
   linear-gradient(
   rgba(0, 0, 0, 0.20),
   rgba(0, 0, 0, 0.20)
-),
-linear-gradient(
-rgba(0, 0, 0, 0.10),
-rgba(0, 0, 0, 0.90)
-),
+  ),
+  linear-gradient(
+  rgba(0, 0, 0, 0.10),
+  rgba(0, 0, 0, 0.90)
+  ),
   url('./build/images/hero.jpg'),
 
   ;
@@ -45,7 +45,7 @@ section{
     &:first-child{
       padding:10% 0 5% 0;
     }
-}
-section.contacto{
-  background: white;
+  &.single-post{
+    padding: 3% 0 5% 0;
+  }
 }
