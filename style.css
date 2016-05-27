@@ -626,8 +626,14 @@ form {
   margin: 0 auto;
   text-align: center;
 }
+@media (max-width: 590px) {
+  /* line 28, _dev/scss/mod/_form.scss */
+  form {
+    width: 100%;
+  }
+}
 
-/* line 34, _dev/scss/mod/_form.scss */
+/* line 37, _dev/scss/mod/_form.scss */
 #simple-contact-form fieldset input {
   width: 100%;
   height: 30px;
@@ -637,29 +643,29 @@ form {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 590px) {
-  /* line 34, _dev/scss/mod/_form.scss */
+  /* line 37, _dev/scss/mod/_form.scss */
   #simple-contact-form fieldset input {
     width: 100%;
   }
 }
 
-/* line 45, _dev/scss/mod/_form.scss */
+/* line 48, _dev/scss/mod/_form.scss */
 #simple-contact-form textarea {
   width: 60%;
 }
 @media (max-width: 590px) {
-  /* line 45, _dev/scss/mod/_form.scss */
+  /* line 48, _dev/scss/mod/_form.scss */
   #simple-contact-form textarea {
     width: 100%;
   }
 }
 
-/* line 51, _dev/scss/mod/_form.scss */
+/* line 54, _dev/scss/mod/_form.scss */
 #simple-contact-form label {
   display: none;
 }
 
-/* line 55, _dev/scss/mod/_form.scss */
+/* line 58, _dev/scss/mod/_form.scss */
 #simple-contact-form input[type=submit] {
   display: inline-block;
   font-family: 'Source Sans Pro', sans-serif;
@@ -676,7 +682,7 @@ form {
   line-height: 18px;
 }
 @media (max-width: 590px) {
-  /* line 55, _dev/scss/mod/_form.scss */
+  /* line 58, _dev/scss/mod/_form.scss */
   #simple-contact-form input[type=submit] {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 19px;
@@ -686,7 +692,7 @@ form {
   }
 }
 
-/* line 72, _dev/scss/mod/_form.scss */
+/* line 75, _dev/scss/mod/_form.scss */
 .boton {
   padding: 5px;
   background: #AF8B2E;

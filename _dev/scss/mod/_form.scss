@@ -29,6 +29,9 @@ form{
   width: 50%;
   margin: 0 auto;
   text-align: center;
+  @include breakpoint(baby-bear) {
+  width: 100%;
+  }
 }
 
 #simple-contact-form fieldset input {
