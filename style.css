@@ -458,16 +458,17 @@ nav {
     font-size: 19px;
     font-size: calculateRem(19px);
     font-weight: 700;
+    font-size: 14px;
     min-width: 100px;
   }
 }
 
-/* line 158, _dev/scss/mod/_nav.scss */
+/* line 159, _dev/scss/mod/_nav.scss */
 .ver {
   text-align: center;
 }
 
-/* line 161, _dev/scss/mod/_nav.scss */
+/* line 162, _dev/scss/mod/_nav.scss */
 a.botton {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 21px;
@@ -481,12 +482,13 @@ a.botton {
   line-height: 18px;
 }
 @media (max-width: 590px) {
-  /* line 161, _dev/scss/mod/_nav.scss */
+  /* line 162, _dev/scss/mod/_nav.scss */
   a.botton {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 19px;
     font-size: calculateRem(19px);
     font-weight: 700;
+    font-size: 12px;
     min-width: 100px;
   }
 }
@@ -688,11 +690,12 @@ form {
     font-size: 19px;
     font-size: calculateRem(19px);
     font-weight: 700;
+    font-size: 12px;
     min-width: 100px;
   }
 }
 
-/* line 75, _dev/scss/mod/_form.scss */
+/* line 76, _dev/scss/mod/_form.scss */
 .boton {
   padding: 5px;
   background: #AF8B2E;
@@ -700,6 +703,17 @@ form {
   width: 100px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+}
+@media (max-width: 590px) {
+  /* line 76, _dev/scss/mod/_form.scss */
+  .boton {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    font-size: calculateRem(19px);
+    font-weight: 700;
+    font-size: 12px;
+    min-width: 100px;
+  }
 }
 
 /* line 1, _dev/scss/mod/_footer.scss */
@@ -835,4 +849,12 @@ p {
   color: black;
   font-size: 16px;
   margin-bottom: 15px;
+}
+
+/* line 37, _dev/scss/mod/_single.scss */
+section.single-post a {
+  display: inline-block;
+  line-height: auto;
+  padding: 0;
+  margin: 0;
 }

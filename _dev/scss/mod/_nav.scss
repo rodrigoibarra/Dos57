@@ -151,6 +151,7 @@ nav {
       line-height: 18px;
       @include breakpoint(baby-bear) {
           @include source-sans(700, 19px);
+          font-size: 14px;
           min-width: 100px;
       }
     }
@@ -168,6 +169,7 @@ a.botton{
   line-height: 18px;
   @include breakpoint(baby-bear) {
       @include source-sans(700, 19px);
+      font-size: 12px;
       min-width: 100px;
   }
 }

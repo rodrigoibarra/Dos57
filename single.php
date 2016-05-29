@@ -17,9 +17,7 @@
       <div class="post-nav">
         <<?php previous_post(' % ','Anterior','no'); ?> <a class="botton" href="http://www.dos57.com/portafolio">Volver a portafolio</a> <?php next_post(' % ', 'Siguiente', 'no'); ?>
       </div>
-      <div style="text-align: center;">
 
-</div>
     </div>
 
   <?php endwhile; endif; ?>
