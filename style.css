@@ -814,7 +814,7 @@ a {
 .intro {
   margin-bottom: 80px;
   position: absolute;
-  bottom: -10px;
+  bottom: 10px;
   padding: 3% 10%;
 }
 /* line 16, _dev/scss/mod/_single.scss */
@@ -857,4 +857,37 @@ section.single-post a {
   line-height: auto;
   padding: 0;
   margin: 0;
+}
+@media (max-width: 740px) {
+  /* line 37, _dev/scss/mod/_single.scss */
+  section.single-post a {
+    width: 31.86667%;
+  }
+  /* line 44, _dev/scss/mod/_single.scss */
+  section.single-post a img {
+    width: 100%;
+    height: auto !important;
+  }
+}
+@media (max-width: 590px) {
+  /* line 37, _dev/scss/mod/_single.scss */
+  section.single-post a {
+    width: 47.75%;
+  }
+  /* line 52, _dev/scss/mod/_single.scss */
+  section.single-post a img {
+    width: 100%;
+    height: auto !important;
+  }
+}
+@media (max-width: 590px) {
+  /* line 37, _dev/scss/mod/_single.scss */
+  section.single-post a {
+    width: 49%;
+  }
+  /* line 60, _dev/scss/mod/_single.scss */
+  section.single-post a img {
+    width: 100%;
+    height: auto !important;
+  }
 }
