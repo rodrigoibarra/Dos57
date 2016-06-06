@@ -28,11 +28,10 @@ Template Name: home
       <div class="ver">
         <a class="botton" href="/portafolio">Ver todos</a>
       </div>
+      <section class="contacto" id="contacto">
+        <div class="wrap">
+          <?php include("includes/form.php"); ?>
+        </div>
+      </section>
     </div>
-    <section class="contacto" id="contacto">
-      <div class="wrap">
-        <?php include("includes/form.php"); ?>
-      </div>
-
-    </section>
     <?php get_footer(); ?>

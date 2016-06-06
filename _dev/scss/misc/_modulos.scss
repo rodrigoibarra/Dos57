@@ -2,7 +2,6 @@ body{
   background: white;
 }
 
-
 .hero-uno{
   width: 100%;
   height: 680px;
@@ -15,12 +14,8 @@ body{
   rgba(0, 0, 0, 0.10),
   rgba(0, 0, 0, 0.90)
   ),
-  url('./build/images/hero.jpg'),
-
-  ;
+  url('./build/images/hero.jpg'), ;
   background-size: cover;
-
-
   @include breakpoint(baby-bear) {
     height: 420px;
 
@@ -31,7 +26,7 @@ body{
 .wrap{
   width: 80%;
   margin: 0 auto;;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   @include breakpoint(baby-bear) {
   width: 90%;
   margin-bottom: 26%;
@@ -40,7 +35,7 @@ body{
 
 
 section{
-    padding:5% 0;
+    padding:5% 0 0 0;
 
     &:first-child{
       padding:10% 0 5% 0;
