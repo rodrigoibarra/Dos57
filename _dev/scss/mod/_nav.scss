@@ -56,6 +56,11 @@
   position: absolute;
   left: 10%;
   top:10px;
+
+  @media (max-width: 820px) {
+    height: 30px;
+    top:20px;
+  }
   @include breakpoint(baby-bear) {
   display: none;
 
@@ -84,24 +89,25 @@
 
 }
 
-nav{
-  width: 100%;
-    text-align: right;
+nav.flex-nav{
+    display: flex;
+    width: 100%;
     color: white;
-    padding: 0px 10%;
     cursor: pointer;
-    @media (max-width: 720px) {
-          padding: 0;
-      }
+    justify-content: flex-end;
+    padding: 0 5%;
+    @include breakpoint(baby-bear) {
+      padding: 0 2%;
+
+    }
+
 
   a:active, a:visited {
     color:white;
   }
 
     a {
-      display: inline-block;
-      line-height: 11vh;
-      padding: 0 10px;
+      align-items: center;
       margin: 0;
       text-decoration: none;
       @media (max-width: 720px) {

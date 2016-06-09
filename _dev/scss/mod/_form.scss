@@ -88,10 +88,12 @@ form{
 }
 
 .nav-form{
-  margin: 0;
-  width: 20%;
-  display: inline-block;
-  input[type=text]{
+  margin: 5px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  height: 60px;
+ input[type=text]{
     background: #222222;
     padding: 5px 0;
     border: none;
@@ -119,8 +121,6 @@ form{
     }
   }
   @media (max-width: 720px) {
-        width: 100%;
-      background: $negro;
-      padding:15px 0;
+        height: 50px;
     }
 }

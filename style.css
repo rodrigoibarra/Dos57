@@ -282,16 +282,21 @@ p:last-child {
   position: absolute;
   left: 10%;
   top: 10px; }
+  @media (max-width: 820px) {
+    /* line 52, _dev/scss/mod/_nav.scss */
+    .logo-h {
+      height: 30px;
+      top: 20px; } }
   @media (max-width: 590px) {
     /* line 52, _dev/scss/mod/_nav.scss */
     .logo-h {
       display: none; } }
 
-/* line 64, _dev/scss/mod/_nav.scss */
+/* line 69, _dev/scss/mod/_nav.scss */
 .resp-logo {
   display: none; }
   @media (max-width: 590px) {
-    /* line 64, _dev/scss/mod/_nav.scss */
+    /* line 69, _dev/scss/mod/_nav.scss */
     .resp-logo {
       height: 30px;
       text-align: left;
@@ -300,7 +305,7 @@ p:last-child {
       left: 10%;
       margin-top: 20px; } }
 
-/* line 76, _dev/scss/mod/_nav.scss */
+/* line 81, _dev/scss/mod/_nav.scss */
 #header {
   background: black;
   z-index: 9000;
@@ -313,60 +318,59 @@ p:last-child {
   font-weight: 400;
   text-align: right; }
 
-/* line 87, _dev/scss/mod/_nav.scss */
-nav {
+/* line 92, _dev/scss/mod/_nav.scss */
+nav.flex-nav {
+  display: flex;
   width: 100%;
-  text-align: right;
   color: white;
-  padding: 0px 10%;
-  cursor: pointer; }
-  @media (max-width: 720px) {
-    /* line 87, _dev/scss/mod/_nav.scss */
-    nav {
-      padding: 0; } }
-  /* line 97, _dev/scss/mod/_nav.scss */
-  nav a:active, nav a:visited {
+  cursor: pointer;
+  justify-content: flex-end;
+  padding: 0 5%; }
+  @media (max-width: 590px) {
+    /* line 92, _dev/scss/mod/_nav.scss */
+    nav.flex-nav {
+      padding: 0 2%; } }
+  /* line 105, _dev/scss/mod/_nav.scss */
+  nav.flex-nav a:active, nav.flex-nav a:visited {
     color: white; }
-  /* line 101, _dev/scss/mod/_nav.scss */
-  nav a {
-    display: inline-block;
-    line-height: 11vh;
-    padding: 0 10px;
+  /* line 109, _dev/scss/mod/_nav.scss */
+  nav.flex-nav a {
+    align-items: center;
     margin: 0;
     text-decoration: none; }
     @media (max-width: 720px) {
-      /* line 101, _dev/scss/mod/_nav.scss */
-      nav a {
+      /* line 109, _dev/scss/mod/_nav.scss */
+      nav.flex-nav a {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 16px;
         font-size: calculateRem(16px);
         font-weight: 400; } }
     @media (max-width: 600px) {
-      /* line 101, _dev/scss/mod/_nav.scss */
-      nav a {
+      /* line 109, _dev/scss/mod/_nav.scss */
+      nav.flex-nav a {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;
         font-size: calculateRem(14px);
         font-weight: 400; } }
     @media (max-width: 590px) {
-      /* line 101, _dev/scss/mod/_nav.scss */
-      nav a {
+      /* line 109, _dev/scss/mod/_nav.scss */
+      nav.flex-nav a {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 10px;
         font-size: calculateRem(10px);
         font-weight: 400; } }
-  /* line 120, _dev/scss/mod/_nav.scss */
-  nav a::after {
+  /* line 126, _dev/scss/mod/_nav.scss */
+  nav.flex-nav a::after {
     content: "|";
     position: relative;
     left: 10px;
     color: #AF8B2E;
     font-weight: bolder; }
-  /* line 127, _dev/scss/mod/_nav.scss */
-  nav a:first-child::after {
+  /* line 133, _dev/scss/mod/_nav.scss */
+  nav.flex-nav a:first-child::after {
     content: ""; }
 
-/* line 135, _dev/scss/mod/_nav.scss */
+/* line 141, _dev/scss/mod/_nav.scss */
 nav {
   background: #f5b335;
   height: 80px;
@@ -374,16 +378,16 @@ nav {
   transition: top 0.2s ease-in-out;
   width: 100%; }
 
-/* line 143, _dev/scss/mod/_nav.scss */
+/* line 149, _dev/scss/mod/_nav.scss */
 .nav-up {
   top: -80px; }
 
-/* line 147, _dev/scss/mod/_nav.scss */
+/* line 153, _dev/scss/mod/_nav.scss */
 .post-nav {
   text-align: center;
   display: flex;
   justify-content: space-between; }
-  /* line 151, _dev/scss/mod/_nav.scss */
+  /* line 157, _dev/scss/mod/_nav.scss */
   .post-nav a {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 21px;
@@ -397,7 +401,7 @@ nav {
     line-height: 18px;
     margin: 15px; }
     @media (max-width: 590px) {
-      /* line 151, _dev/scss/mod/_nav.scss */
+      /* line 157, _dev/scss/mod/_nav.scss */
       .post-nav a {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 19px;
@@ -406,17 +410,17 @@ nav {
         font-size: 14px;
         width: 100%; } }
   @media (max-width: 590px) {
-    /* line 147, _dev/scss/mod/_nav.scss */
+    /* line 153, _dev/scss/mod/_nav.scss */
     .post-nav {
       flex-wrap: wrap;
       justify-content: flex-end; } }
 
-/* line 175, _dev/scss/mod/_nav.scss */
+/* line 181, _dev/scss/mod/_nav.scss */
 .ver {
   text-align: center;
   padding-top: 5%; }
 
-/* line 179, _dev/scss/mod/_nav.scss */
+/* line 185, _dev/scss/mod/_nav.scss */
 a.botton {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 21px;
@@ -430,7 +434,7 @@ a.botton {
   line-height: 18px;
   margin: 15px; }
   @media (max-width: 590px) {
-    /* line 179, _dev/scss/mod/_nav.scss */
+    /* line 185, _dev/scss/mod/_nav.scss */
     a.botton {
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 19px;
@@ -626,23 +630,25 @@ form {
 
 /* line 90, _dev/scss/mod/_form.scss */
 .nav-form {
-  margin: 0;
-  width: 20%;
-  display: inline-block; }
-  /* line 94, _dev/scss/mod/_form.scss */
+  margin: 5px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  height: 60px; }
+  /* line 96, _dev/scss/mod/_form.scss */
   .nav-form input[type=text] {
     background: #222222;
     padding: 5px 0;
     border: none;
     color: white; }
     @media (max-width: 720px) {
-      /* line 94, _dev/scss/mod/_form.scss */
+      /* line 96, _dev/scss/mod/_form.scss */
       .nav-form input[type=text] {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 8px;
         font-size: calculateRem(8px);
         font-weight: 400; } }
-  /* line 104, _dev/scss/mod/_form.scss */
+  /* line 106, _dev/scss/mod/_form.scss */
   .nav-form button[type=submit] {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
@@ -652,21 +658,21 @@ form {
     border: none;
     color: white; }
     @media (max-width: 720px) {
-      /* line 104, _dev/scss/mod/_form.scss */
+      /* line 106, _dev/scss/mod/_form.scss */
       .nav-form button[type=submit] {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 16px;
         font-size: calculateRem(16px);
         font-weight: 400; } }
     @media (max-width: 600px) {
-      /* line 104, _dev/scss/mod/_form.scss */
+      /* line 106, _dev/scss/mod/_form.scss */
       .nav-form button[type=submit] {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;
         font-size: calculateRem(14px);
         font-weight: 400; } }
     @media (max-width: 590px) {
-      /* line 104, _dev/scss/mod/_form.scss */
+      /* line 106, _dev/scss/mod/_form.scss */
       .nav-form button[type=submit] {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 10px;
@@ -675,9 +681,7 @@ form {
   @media (max-width: 720px) {
     /* line 90, _dev/scss/mod/_form.scss */
     .nav-form {
-      width: 100%;
-      background: black;
-      padding: 15px 0; } }
+      height: 50px; } }
 
 /* line 1, _dev/scss/mod/_footer.scss */
 footer {
