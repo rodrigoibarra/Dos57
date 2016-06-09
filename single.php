@@ -15,8 +15,8 @@
       </section>
 
       <div class="post-nav">
-        <?php previous_post(' % ','Anterior','no'); ?> <?php next_post(' % ', 'Siguiente', 'no'); ?></br>
-        <a class="botton" href="http://www.dos57.com/portafolio">Volver a portafolio</a>
+        <?php previous_post(' % ','Anterior','no'); ?>  <a class="botton" href="http://www.dos57.com/portafolio">Volver a portafolio</a> <?php next_post(' % ', 'Siguiente', 'no'); ?>
+
       </div>
 
     </div>

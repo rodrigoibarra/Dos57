@@ -3,14 +3,14 @@ module.exports = {
     options: {              // Target options
       sassDir: '_dev/scss/',
       cssDir: ['build/css/', './'],
-      environment: 'development',
+      outputStyle: 'nested',
     }
   },
   dist: {                   // Target
     options: {              // Target options
       sassDir: '_dev/scss/',
-      cssDir: 'build/css/',
-      environment: 'production',
+      cssDir: ['build/css/', './'],
+      outputStyle: 'compressed',
     }
   }
 }

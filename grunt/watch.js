@@ -1,7 +1,7 @@
 module.exports = {
   compass: {
    files: ['**/*.scss', '*.html'],
-   tasks: ['compass'],
+   tasks: ['compass:dev'],
    options: {
      spawn: false,
      livereload: true,
