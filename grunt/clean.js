@@ -1,6 +1,6 @@
 module.exports = {
     clear: {
-      src: [ 'Dos57Prod' ]
+      src: [ 'Dos57 dev' ]
     }
 
 }
