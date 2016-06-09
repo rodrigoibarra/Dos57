@@ -86,3 +86,41 @@ form{
       min-width: 100px;
   }
 }
+
+.nav-form{
+  margin: 0;
+  width: 20%;
+  display: inline-block;
+  input[type=text]{
+    background: #222222;
+    padding: 5px 0;
+    border: none;
+    color: white;
+    @media (max-width: 720px) {
+            @include source-sans(400, 8px);
+      }
+
+  }
+  button[type=submit]{
+    @include source-sans(400, 18px);
+    background: $negro;
+    border: none;
+    color: white;
+    @media (max-width: 720px) {
+            @include source-sans(400, 16px);
+      }
+
+      @media (max-width: 600px) {
+        @include source-sans(400, 14px);
+        }
+    @include breakpoint(baby-bear) {
+      @include source-sans(400, 10px);
+
+    }
+  }
+  @media (max-width: 720px) {
+        width: 100%;
+      background: $negro;
+      padding:15px 0;
+    }
+}
