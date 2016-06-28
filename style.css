@@ -319,60 +319,62 @@ p:last-child {
 
 /* line 92, _dev/scss/mod/_nav.scss */
 nav.flex-nav {
-  display: -webkit-box;
-  display: flex;
   width: 100%;
   color: white;
   cursor: pointer;
+  padding: 0 5%;
+  display: -webkit-box;
+  display: flex;
   -webkit-box-pack: end;
           justify-content: flex-end;
-  padding: 0 5%; }
+  flex-wrap: nowrap; }
   @media (max-width: 590px) {
     /* line 92, _dev/scss/mod/_nav.scss */
     nav.flex-nav {
-      padding: 0 2%; } }
-  /* line 105, _dev/scss/mod/_nav.scss */
+      padding: 0;
+      flex-wrap: wrap; } }
+  /* line 107, _dev/scss/mod/_nav.scss */
   nav.flex-nav a:active, nav.flex-nav a:visited {
     color: white; }
-  /* line 109, _dev/scss/mod/_nav.scss */
+  /* line 111, _dev/scss/mod/_nav.scss */
   nav.flex-nav a {
     -webkit-box-align: center;
             align-items: center;
     margin: 0;
     text-decoration: none; }
     @media (max-width: 720px) {
-      /* line 109, _dev/scss/mod/_nav.scss */
+      /* line 111, _dev/scss/mod/_nav.scss */
       nav.flex-nav a {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 16px;
         font-size: calculateRem(16px);
         font-weight: 400; } }
     @media (max-width: 600px) {
-      /* line 109, _dev/scss/mod/_nav.scss */
+      /* line 111, _dev/scss/mod/_nav.scss */
       nav.flex-nav a {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;
         font-size: calculateRem(14px);
         font-weight: 400; } }
     @media (max-width: 590px) {
-      /* line 109, _dev/scss/mod/_nav.scss */
+      /* line 111, _dev/scss/mod/_nav.scss */
       nav.flex-nav a {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 10px;
         font-size: calculateRem(10px);
         font-weight: 400; } }
-  /* line 126, _dev/scss/mod/_nav.scss */
+  /* line 128, _dev/scss/mod/_nav.scss */
   nav.flex-nav a::after {
     content: "|";
     position: relative;
     left: 10px;
     color: #AF8B2E;
     font-weight: bolder; }
-  /* line 133, _dev/scss/mod/_nav.scss */
+  /* line 135, _dev/scss/mod/_nav.scss */
   nav.flex-nav a:first-child::after {
     content: ""; }
 
-/* line 141, _dev/scss/mod/_nav.scss */
+/* line 143, _dev/scss/mod/_nav.scss */
 nav {
   background: #f5b335;
   height: 80px;
@@ -381,18 +383,18 @@ nav {
           transition: top 0.2s ease-in-out;
   width: 100%; }
 
-/* line 149, _dev/scss/mod/_nav.scss */
+/* line 151, _dev/scss/mod/_nav.scss */
 .nav-up {
   top: -80px; }
 
-/* line 153, _dev/scss/mod/_nav.scss */
+/* line 155, _dev/scss/mod/_nav.scss */
 .post-nav {
   text-align: center;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between; }
-  /* line 157, _dev/scss/mod/_nav.scss */
+  /* line 159, _dev/scss/mod/_nav.scss */
   .post-nav a {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 21px;
@@ -406,7 +408,7 @@ nav {
     line-height: 18px;
     margin: 15px; }
     @media (max-width: 590px) {
-      /* line 157, _dev/scss/mod/_nav.scss */
+      /* line 159, _dev/scss/mod/_nav.scss */
       .post-nav a {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 19px;
@@ -415,18 +417,18 @@ nav {
         font-size: 14px;
         width: 100%; } }
   @media (max-width: 590px) {
-    /* line 153, _dev/scss/mod/_nav.scss */
+    /* line 155, _dev/scss/mod/_nav.scss */
     .post-nav {
       flex-wrap: wrap;
       -webkit-box-pack: end;
               justify-content: flex-end; } }
 
-/* line 181, _dev/scss/mod/_nav.scss */
+/* line 183, _dev/scss/mod/_nav.scss */
 .ver {
   text-align: center;
   padding-top: 5%; }
 
-/* line 185, _dev/scss/mod/_nav.scss */
+/* line 187, _dev/scss/mod/_nav.scss */
 a.botton {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 21px;
@@ -440,7 +442,7 @@ a.botton {
   line-height: 18px;
   margin: 15px; }
   @media (max-width: 590px) {
-    /* line 185, _dev/scss/mod/_nav.scss */
+    /* line 187, _dev/scss/mod/_nav.scss */
     a.botton {
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 19px;
@@ -644,20 +646,20 @@ form {
           align-items: center;
   height: 60px; }
   /* line 96, _dev/scss/mod/_form.scss */
-  .nav-form input[type=text] {
+  .nav-form select {
     background: #222222;
     padding: 5px 0;
     border: none;
     color: white; }
     @media (max-width: 720px) {
       /* line 96, _dev/scss/mod/_form.scss */
-      .nav-form input[type=text] {
+      .nav-form select {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 8px;
         font-size: calculateRem(8px);
         font-weight: 400; } }
   /* line 106, _dev/scss/mod/_form.scss */
-  .nav-form button[type=submit] {
+  .nav-form input[type=submit] {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     font-size: calculateRem(18px);
@@ -667,21 +669,21 @@ form {
     color: white; }
     @media (max-width: 720px) {
       /* line 106, _dev/scss/mod/_form.scss */
-      .nav-form button[type=submit] {
+      .nav-form input[type=submit] {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 16px;
         font-size: calculateRem(16px);
         font-weight: 400; } }
     @media (max-width: 600px) {
       /* line 106, _dev/scss/mod/_form.scss */
-      .nav-form button[type=submit] {
+      .nav-form input[type=submit] {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;
         font-size: calculateRem(14px);
         font-weight: 400; } }
     @media (max-width: 590px) {
       /* line 106, _dev/scss/mod/_form.scss */
-      .nav-form button[type=submit] {
+      .nav-form input[type=submit] {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 10px;
         font-size: calculateRem(10px);
@@ -690,6 +692,17 @@ form {
     /* line 90, _dev/scss/mod/_form.scss */
     .nav-form {
       height: 50px; } }
+  @media (max-width: 590px) {
+    /* line 90, _dev/scss/mod/_form.scss */
+    .nav-form {
+      width: 100%;
+      background: black;
+      margin: 0;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+              justify-content: center;
+      margin-bottom: 20px; } }
 
 /* line 1, _dev/scss/mod/_footer.scss */
 footer {
