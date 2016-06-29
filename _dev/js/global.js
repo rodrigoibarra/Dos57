@@ -13,3 +13,6 @@ $(document).ready(function() {
     $(window).stop(true).scrollTo(this.hash, {duration:1000, interrupt:true});
   });
 });
+$('#toggle').click(function() {
+  $('.cat-nav').toggleClass('at-nav-hide cat-nav-show');
+});

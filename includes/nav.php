@@ -4,5 +4,9 @@
   <a href="#nosotros">Nosotros</a>
   <a href="#portafolio">Portafolio</a>
   <a href="#contacto">Contacto</a>
-  <?php echo do_shortcode( '[searchandfilter fields="search" class="nav-form" search_placeholder="categorias" submit_label="Buscar" taxonomies="post_tag"]' ); ?>
 </nav>
+<div class="cat-nav cat-nav-hide ">
+  <?php wp_list_categories( array(
+      'title_li' => ''
+  ) ); ?>
+</div>
