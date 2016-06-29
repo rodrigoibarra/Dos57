@@ -11,7 +11,9 @@
     <div class="wrap cf">
       <section class="single-post cf">
         <p><?php the_field('intro')?></p>
-                <?php the_content() ?>
+          <div class="galeria-flex">
+            <?php the_content() ?>
+          </div>
       </section>
 
       <div class="post-nav">
