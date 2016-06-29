@@ -2,7 +2,6 @@
 <?php include("includes/nav.php"); ?>
     <div class="wrap cf">
       <section class="portafolio" id="portafolio">
-
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <a class="galeria" href="<?php the_permalink(); ?>">
               <div class="fig">

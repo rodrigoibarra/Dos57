@@ -8,14 +8,39 @@
   height: 40px;
   list-style: none;
   a{
-    line-height: auto;
+    line-height: 12px;
+
+  }
+  li{
+    width: auto;
+
+  }
+  @media (max-width: 720px) {
+          @include source-sans(400, 16px);
+    }
+
+    @media (max-width: 600px) {
+      @include source-sans(400, 14px);
+      }
+  @include breakpoint(baby-bear) {
+    @include source-sans(400, 10px);
+    height: 80px;
+
   }
 }
 .cat-nav-hide{
   display:none;
+
 }
 .cat-nav-show{
   display:flex;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
+  @include breakpoint(baby-bear) {
+    @include source-sans(400, 10px);
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 }

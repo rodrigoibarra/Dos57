@@ -6,6 +6,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+    color:white;
   @include breakpoint(baby-bear) {
     height: 500px;
 
@@ -13,8 +14,8 @@
 }
 
 h1.titulo{
-  color:white;
   @include source-sans(500, 64px);
+  margin-top:5%;
   margin-bottom: 0;
   padding-bottom: 0;
     @include breakpoint(baby-bear) {
