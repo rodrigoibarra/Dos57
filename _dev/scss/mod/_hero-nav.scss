@@ -1,0 +1,41 @@
+.hero-nav {
+  width: 40%;
+  margin: 0 auto;
+  padding: 10% 0;
+  text-align: center;
+  @media (max-width: 720px)  {
+  width: 90%;
+}
+    @include source-sans(400, 18px);
+    @include breakpoint(baby-bear) {
+      width: 80%;
+      padding: 10% 0;
+      @include source-sans(400, 12px);
+
+    }
+
+  a {
+    display: inline-block;
+    line-height: 11vh;
+    color: white;
+    padding: 0 10px;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:active, a:visited {
+    color:white;
+  }
+
+  a::after{
+    content: "|" ;
+    position: relative;
+    left: 10px;
+    color: $dorado;
+    font-weight: bolder;
+  }
+  a:last-child::after{
+    content: "";
+  }
+}

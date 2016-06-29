@@ -1,0 +1,36 @@
+.logo-m{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+
+}
+
+.logo-h{
+  height: 50px;
+  text-align: left;
+  display: inline-block;
+  position: absolute;
+  left: 10%;
+  top:10px;
+
+  @media (max-width: 820px) {
+    height: 30px;
+    top:20px;
+  }
+  @include breakpoint(baby-bear) {
+  display: none;
+
+  }
+}
+.resp-logo{
+  display: none;
+  @include breakpoint(baby-bear) {
+    height: 30px;
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    margin-top: 20px;
+  }
+}

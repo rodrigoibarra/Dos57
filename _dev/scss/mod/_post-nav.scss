@@ -1,0 +1,33 @@
+
+.post-nav{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+    a{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 21px;
+    font-size: calculateRem(21px);
+    font-weight: 500;
+    margin: 0 auto;
+    background: $dorado;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px 30px;
+    line-height: 18px;
+    margin: 15px;
+      @include breakpoint(baby-bear) {
+          @include source-sans(700, 19px);
+          font-size: 14px;
+          width: 100%;
+      }
+    }
+    @include breakpoint(baby-bear) {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+
+      }
+}
+.ver{
+  text-align: center;
+  padding-top:5%;
+}
